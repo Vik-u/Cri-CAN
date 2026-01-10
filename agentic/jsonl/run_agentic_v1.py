@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import argparse
 import json
-import random
 import sys
 from pathlib import Path
 
@@ -13,7 +12,8 @@ sys.path.append(str(AGENTIC_DIR))
 
 from config import get_path, load_config
 from agents import FactCheckAgent, PlannerAgent, StyleAgent
-from llm_adapter import generate_with_llm, render_template
+from llm_adapter import generate_with_llm
+from style_templates import render_style
 
 def load_overs(path):
     rows = []
@@ -87,8 +87,9 @@ def select_rows(rows, match_id=None, start=None, end=None, limit=None):
     return selected
 
 
-def build_prompt(system_text, user_template, row, plan, context_window, recent_overs, current_over_summary):
+def build_prompt(system_text, user_template, row, plan, style, context_window, recent_overs, current_over_summary):
     values = {
+        "style": style,
         "ball_number": row.get("ball_number", ""),
         "bowler": row.get("bowler", ""),
         "batsman": row.get("batsman", ""),
@@ -110,7 +111,7 @@ def build_prompt(system_text, user_template, row, plan, context_window, recent_o
 def fallback_commentary(row, plan, style_agent, fact_agent, context_window):
     snippet = ""
     commentary = shorten(row.get("commentary", ""))
-    if plan["event_type"] in {"wicket", "boundary"} or random.random() < 0.25:
+    if plan["event_type"] in {"wicket", "boundary"}:
         snippet = commentary
 
     line = style_agent.render(plan, row, snippet=snippet if snippet else None)
@@ -127,8 +128,8 @@ def main():
     parser.add_argument("--context", type=int, default=3, help="Number of prior lines to pass as context")
     parser.add_argument("--context-overs", type=int, default=2, help="Number of prior over summaries to pass as context")
     parser.add_argument("--output", default=None, help="Output text file")
-    parser.add_argument("--seed", type=int, default=None, help="Random seed for fallback templates")
     parser.add_argument("--model", default=None, help="Override model for LLM command")
+    parser.add_argument("--style", default=None, help="Style: broadcast|funny|serious|methodical|energetic|roasting")
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -139,23 +140,29 @@ def main():
     system_text = (prompts_dir / "system.txt").read_text(encoding="utf-8")
     user_template = (prompts_dir / "user.txt").read_text(encoding="utf-8")
 
-    if args.seed is not None:
-        random.seed(args.seed)
-
     rows, over_summaries = load_overs(input_path)
     if not args.match and rows:
         args.match = rows[0].get("match_id")
 
     selected = select_rows(rows, match_id=args.match, start=args.start, end=args.end, limit=args.limit)
 
+    style = args.style or config.get("agentic", {}).get("default_style", "broadcast")
     planner = PlannerAgent()
-    style_agent = StyleAgent(render_template)
+    style_agent = StyleAgent(lambda plan, row: render_style(
+        style=style,
+        event_type=plan["event_type"],
+        bowler=row.get("bowler", ""),
+        batsman=row.get("batsman", ""),
+        runs=int(row.get("token_runs") or 0),
+        seed_key=f\"{row.get('match_id')}|{row.get('innings_index')}|{row.get('ball_number')}|{style}\",
+    ))
     fact_agent = FactCheckAgent()
 
     header_lines = [
         f"# {config.get('agentic', {}).get('v1_label', 'v1-agentic-llm')}",
         "# llm: uses external command when configured; falls back to style templates",
         f"# match_id: {args.match or 'unknown'}",
+        f"# style: {style}",
     ]
 
     output_lines = list(header_lines)
@@ -177,6 +184,7 @@ def main():
             user_template,
             row,
             plan,
+            style,
             context_window[-args.context :],
             recent_overs,
             current_over_summary,

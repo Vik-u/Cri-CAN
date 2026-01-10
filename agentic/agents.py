@@ -33,15 +33,11 @@ class PlannerAgent:
 
 
 class StyleAgent:
-    def __init__(self, template_fn):
-        self.template_fn = template_fn
+    def __init__(self, renderer):
+        self.renderer = renderer
 
     def render(self, plan, row, snippet=None):
-        bowler = row.get("bowler", "")
-        batsman = row.get("batsman", "")
-        runs = int(row.get("token_runs") or 0)
-
-        base = self.template_fn(plan["event_type"], bowler, batsman, runs)
+        base = self.renderer(plan, row)
         if snippet:
             return base + " " + snippet
         return base

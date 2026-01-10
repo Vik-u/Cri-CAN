@@ -55,6 +55,11 @@ Output is labeled `v0-deterministic` and is derived directly from parsed comment
 - Agents: `Cri-CAN/agentic/agents.py` (PlannerAgent, StyleAgent, FactCheckAgent)
 - Prompts: `Cri-CAN/agentic/jsonl/prompts/system.txt`, `Cri-CAN/agentic/jsonl/prompts/user.txt`
 
+### Commentary CLI (chunked output)
+- CLI: `Cri-CAN/agentic/commentary_cli.py`
+- Filters by over, bowler, batsman, team, innings, and event type.
+- Style controls: broadcast, funny, serious, methodical, energetic, roasting.
+
 Features:
 - Conversational tone (broadcast style)
 - Timepoint control: `--start`, `--end`, `--limit`

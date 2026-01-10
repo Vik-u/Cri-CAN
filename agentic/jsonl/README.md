@@ -74,6 +74,7 @@ python3 Cri-CAN/agentic/jsonl/run_agentic_v1.py --context-overs 3 --limit 10
 Config:
 - Defaults come from `Cri-CAN/config.toml`.
 - Override with `--config /path/to/config.toml`.
+- Styles: broadcast, funny, serious, methodical, energetic, roasting.
 
 ## Outputs
 - `Cri-CAN/agentic/jsonl/sample_output.txt` (first 60 balls by default)

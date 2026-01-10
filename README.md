@@ -18,6 +18,7 @@ Cricket Commentary Agentic Network (CWC 2011 Final). This repo turns Cricinfo-st
 - `Cri-CAN/data/structured/report.md`: structured data performance report.
 - `Cri-CAN/tools`: build + QA tooling.
 - `Cri-CAN/agentic`: v0/v1 commentary pipelines and reports.
+- `Cri-CAN/agentic/commentary_cli.py`: chunked commentary CLI by over/bowler/team/event/style.
 - `Cri-CAN/config.toml`: global configuration.
 - `Cri-CAN/Makefile`: reproducible build/run targets.
 
@@ -83,6 +84,13 @@ python3 Cri-CAN/agentic/jsonl/run_agentic_v1.py --context-overs 3 --limit 10
 Ollama model override:
 ```bash
 python3 Cri-CAN/agentic/jsonl/run_agentic_v1.py --model gpt-oss:20b --limit 10
+```
+
+## Commentary CLI (chunked output)
+```bash
+python3 Cri-CAN/agentic/commentary_cli.py --innings 2 --over 10 --style energetic
+python3 Cri-CAN/agentic/commentary_cli.py --team IND --event boundary --style funny
+python3 Cri-CAN/agentic/commentary_cli.py --bowler Malinga --over 20 --style serious
 ```
 
 ## SQLite query layer

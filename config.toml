@@ -29,6 +29,7 @@ output_jsonl = "agentic/jsonl/sample_output.txt"
 output_jsonl_v1 = "agentic/jsonl/sample_output_v1.txt"
 v0_label = "v0-deterministic"
 v1_label = "v1-agentic-llm"
+default_style = "broadcast"
 
 [llm]
 provider = "ollama"
