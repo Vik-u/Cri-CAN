@@ -1,4 +1,4 @@
-# Cri End-to-End Guide
+# Cri-CAN End-to-End Guide
 
 This document captures the full flow from raw files to structured data to agentic commentary.
 
