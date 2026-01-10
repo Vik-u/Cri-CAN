@@ -1,0 +1,2312 @@
+match_id,source_file,innings_index,meta_type,over,text
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,meta,,// ICC CWC 2011 Final India vs SL
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,innings_header,,## Inning 2
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,meta,,"6:50pm IST Thanks Abhishek. Boy, that was the innings of the World Cup from Mahela!"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,1,"Maiden
+SL: 2/0
+CRR: 2.00
+Tillakaratne Dilshan
+0 (1b)
+Upul Tharanga
+0 (5b)
+Zaheer Khan
+1-1-0-0
+""Will Sreesanth win or lose this world cup? Depends which one of him turns up,"" says Skippy. Well here he is, bowling from over the wicket. He hasn't played since the opening game."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,2,"5 runs
+SL: 7/0
+CRR: 3.50
+Tillakaratne Dilshan
+3 (7b)
+Upul Tharanga
+1 (6b)
+Sreesanth
+1-0-5-0
+Zaheer Khan
+1-1-0-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,3,"Maiden
+SL: 7/0
+CRR: 2.33
+Upul Tharanga
+1 (12b)
+Tillakaratne Dilshan
+3 (7b)
+Zaheer Khan
+2-2-0-0
+Sreesanth
+1-0-5-0
+""I swear if Sreesanth removed all his jewellery he would bowl 5kph faster. Could do with his hair trimming too,"" says Wombat. How's your grandma wombat? (If it is the same wombat!)"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,4,"2 runs
+SL: 9/0
+CRR: 2.25
+Tillakaratne Dilshan
+4 (12b)
+Upul Tharanga
+2 (13b)
+Sreesanth
+2-0-7-0
+Zaheer Khan
+2-2-0-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,5,"Maiden
+SL: 9/0
+CRR: 1.80
+Upul Tharanga
+2 (19b)
+Tillakaratne Dilshan
+4 (12b)
+Zaheer Khan
+3-3-0-0
+Sreesanth
+2-0-7-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,6,"8 runs
+SL: 17/0
+CRR: 2.83
+Tillakaratne Dilshan
+12 (18b 2x4)
+Upul Tharanga
+2 (19b)
+Sreesanth
+3-0-15-0
+Zaheer Khan
+3-3-0-0
+""What a change 8 years bring -- Zaheer in 2003 0/28 in 3 overs; in 2011 3 maidens in 3 overs.. Impressive even though bowling to Hayden/Gilly is different from bowling to Dilshan/Tharanga,"" says Sundar."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,7,"2 runs • 1 wicket
+SL: 19/1
+CRR: 2.71
+Kumar Sangakkara
+1 (4b)
+Tillakaratne Dilshan
+13 (19b 2x4)
+Zaheer Khan
+4-3-2-1
+Sreesanth
+3-0-15-0
+Munaf replaces Sreesanth"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,8,"5 runs
+SL: 24/1
+CRR: 3.00
+Tillakaratne Dilshan
+16 (23b 2x4)
+Kumar Sangakkara
+2 (6b)
+Munaf Patel
+1-0-5-0
+Zaheer Khan
+4-3-2-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,9,"4 runs
+SL: 28/1
+CRR: 3.11
+Kumar Sangakkara
+3 (10b)
+Tillakaratne Dilshan
+19 (25b 2x4)
+Zaheer Khan
+5-3-6-1
+Munaf Patel
+1-0-5-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,10,"3 runs
+SL: 31/1
+CRR: 3.10
+Kumar Sangakkara
+3 (11b)
+Tillakaratne Dilshan
+22 (30b 2x4)
+Munaf Patel
+2-0-8-0
+Zaheer Khan
+5-3-6-1
+Sreesanth replaces Zaheer."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,11,"3 runs
+SL: 34/1
+CRR: 3.09
+Kumar Sangakkara
+3 (14b)
+Tillakaratne Dilshan
+25 (33b 2x4)
+Sreesanth
+4-0-18-0
+Munaf Patel
+2-0-8-0
+""Any info on why Sangakarra's helmet looks so different from everyone else? It looks more aerodynamic!"" says Bobby. It looks like a platypus."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,12,"5 runs
+SL: 39/1
+CRR: 3.25
+Kumar Sangakkara
+7 (19b 1x4)
+Tillakaratne Dilshan
+26 (34b 2x4)
+Munaf Patel
+3-0-13-0
+Sreesanth
+4-0-18-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,13,"15 runs
+SL: 54/1
+CRR: 4.15
+Tillakaratne Dilshan
+31 (36b 3x4)
+Kumar Sangakkara
+16 (24b 3x4)
+Sreesanth
+5-0-33-0
+Munaf Patel
+3-0-13-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,14,"2 runs
+SL: 56/1
+CRR: 4.00
+Kumar Sangakkara
+17 (29b 3x4)
+Tillakaratne Dilshan
+31 (37b 3x4)
+Munaf Patel
+4-0-14-0
+Sreesanth
+5-0-33-0
+Now then, it's time for spin. Here's Harbhajan with one over left in the powerplay.
+Thanks George. It's been a good start from India but Sri Lanka have been steady, and with Sangakkara and Dilshan both starting to look good, this match is set up well. Personally, I reckon Kumar looks like he's wearing Donald Duck on his head, but there you go."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,15,"2 runs
+SL: 58/1
+CRR: 3.86
+Tillakaratne Dilshan
+32 (42b 3x4)
+Kumar Sangakkara
+18 (30b 3x4)
+Harbhajan Singh
+1-0-2-0
+Munaf Patel
+4-0-14-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,16,"2 runs
+SL: 60/1
+CRR: 3.75
+Kumar Sangakkara
+19 (32b 3x4)
+Tillakaratne Dilshan
+33 (46b 3x4)
+Munaf Patel
+5-0-16-0
+Harbhajan Singh
+1-0-2-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,17,"3 runs • 1 wicket
+SL: 63/2
+CRR: 3.70
+Mahela Jayawardene
+2 (2b)
+Kumar Sangakkara
+20 (33b 3x4)
+Harbhajan Singh
+2-0-5-1
+Munaf Patel
+5-0-16-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,18,"2 runs
+SL: 65/2
+CRR: 3.61
+Mahela Jayawardene
+4 (8b)
+Kumar Sangakkara
+20 (33b 3x4)
+Munaf Patel
+6-0-18-0
+Harbhajan Singh
+2-0-5-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,19,"12 runs
+SL: 77/2
+CRR: 4.05
+Kumar Sangakkara
+26 (36b 4x4)
+Mahela Jayawardene
+10 (11b 1x4)
+Harbhajan Singh
+3-0-17-1
+Munaf Patel
+6-0-18-0
+Now then, Sreesanth makes his return. Interesting move."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,20,"6 runs
+SL: 83/2
+CRR: 4.15
+Mahela Jayawardene
+15 (16b 2x4)
+Kumar Sangakkara
+27 (37b 4x4)
+Sreesanth
+6-0-39-0
+Harbhajan Singh
+3-0-17-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,21,"3 runs
+SL: 86/2
+CRR: 4.09
+Kumar Sangakkara
+30 (43b 4x4)
+Mahela Jayawardene
+15 (16b 2x4)
+Harbhajan Singh
+4-0-20-1
+Sreesanth
+6-0-39-0
+Sreesanth is off after a one-over spell and Dhoni wants spin from both ends. It's Yuuuuvie time!"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,22,"8 runs
+SL: 94/2
+CRR: 4.27
+Mahela Jayawardene
+21 (19b 3x4)
+Kumar Sangakkara
+32 (46b 4x4)
+Yuvraj Singh
+1-0-8-0
+Harbhajan Singh
+4-0-20-1
+Slip and leg slip in place now"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,23,"2 runs
+SL: 96/2
+CRR: 4.17
+Mahela Jayawardene
+22 (21b 3x4)
+Kumar Sangakkara
+33 (50b 4x4)
+Harbhajan Singh
+5-0-22-1
+Yuvraj Singh
+1-0-8-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,24,"4 runs
+SL: 100/2
+CRR: 4.16
+Kumar Sangakkara
+36 (54b 4x4)
+Mahela Jayawardene
+23 (23b 3x4)
+Yuvraj Singh
+2-0-12-0
+Harbhajan Singh
+5-0-22-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,25,"5 runs
+SL: 105/2
+CRR: 4.20
+Mahela Jayawardene
+25 (25b 3x4)
+Kumar Sangakkara
+39 (58b 4x4)
+Harbhajan Singh
+6-0-27-1
+Yuvraj Singh
+2-0-12-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,26,"6 runs
+SL: 111/2
+CRR: 4.26
+Mahela Jayawardene
+30 (30b 4x4)
+Kumar Sangakkara
+40 (59b 4x4)
+Yuvraj Singh
+3-0-18-0
+Harbhajan Singh
+6-0-27-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,27,"3 runs
+SL: 114/2
+CRR: 4.22
+Mahela Jayawardene
+32 (32b 4x4)
+Kumar Sangakkara
+41 (63b 4x4)
+Harbhajan Singh
+7-0-30-1
+Yuvraj Singh
+3-0-18-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,28,"8 runs • 1 wicket
+SL: 122/3
+CRR: 4.35
+Thilan Samaraweera
+0 (1b)
+Mahela Jayawardene
+33 (33b 4x4)
+Yuvraj Singh
+4-0-26-1
+Harbhajan Singh
+7-0-30-1
+Well, how important is Mahela Jayawardene now? He's well set and you'd think he has to bat most of the way through this innings, to give Sri Lanka their best chance. Sreesanth is back. Let's dance."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,29,"6 runs
+SL: 128/3
+CRR: 4.41
+Thilan Samaraweera
+5 (5b 1x4)
+Mahela Jayawardene
+34 (35b 4x4)
+Sreesanth
+7-0-45-0
+Yuvraj Singh
+4-0-26-1
+Thanks, Brydon. Huge wicket for India just before drinks. Kumar was batting so serenely, and so effectively
+Rajender: ""SREE is not his self, I guess the agrro is missing and he looking meagre, somebody needs to pump him up.."" India's over rate has been atrocious. Yuvraj to continue after drinks."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,30,"4 runs
+SL: 132/3
+CRR: 4.40
+Thilan Samaraweera
+9 (11b 2x4)
+Mahela Jayawardene
+34 (35b 4x4)
+Yuvraj Singh
+5-0-30-1
+Sreesanth
+7-0-45-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,31,"7 runs
+SL: 139/3
+CRR: 4.48
+Mahela Jayawardene
+40 (40b 5x4)
+Thilan Samaraweera
+10 (12b 2x4)
+Sreesanth
+8-0-52-0
+Yuvraj Singh
+5-0-30-1
+Mandeep: ""I think Dhoni is going wrong in trying and finishing SreeSanth's Overs...I would rather have Sachin or Raina bowl a few overs..atleast there will be a slight chance of a wicket."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,32,"4 runs
+SL: 143/3
+CRR: 4.46
+Thilan Samaraweera
+12 (15b 2x4)
+Mahela Jayawardene
+42 (43b 5x4)
+Yuvraj Singh
+6-0-34-1
+Sreesanth
+8-0-52-0
+Sachin Tendulkar in to the attack, to a loud roar"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,33,"5 runs
+SL: 148/3
+CRR: 4.48
+Thilan Samaraweera
+14 (19b 2x4)
+Mahela Jayawardene
+44 (45b 5x4)
+Sachin Tendulkar
+1-0-5-0
+Yuvraj Singh
+6-0-34-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,34,"7 runs
+SL: 155/3
+CRR: 4.55
+Mahela Jayawardene
+50 (49b 6x4)
+Thilan Samaraweera
+15 (21b 2x4)
+Yuvraj Singh
+7-0-41-1
+Sachin Tendulkar
+1-0-5-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,35,"7 runs
+SL: 162/3
+CRR: 4.62
+Thilan Samaraweera
+16 (24b 2x4)
+Mahela Jayawardene
+54 (52b 6x4)
+Sachin Tendulkar
+2-0-12-0
+Yuvraj Singh
+7-0-41-1
+Now Dhoni gives the ball to Virat Kohli, hmm"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,36,"6 runs
+SL: 168/3
+CRR: 4.66
+Mahela Jayawardene
+59 (56b 7x4)
+Thilan Samaraweera
+17 (26b 2x4)
+Virat Kohli
+1-0-6-0
+Sachin Tendulkar
+2-0-12-0
+The procession of part-timers continues. Here is Yuvraj again"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,37,"3 runs
+SL: 171/3
+CRR: 4.62
+Thilan Samaraweera
+19 (29b 2x4)
+Mahela Jayawardene
+60 (59b 7x4)
+Yuvraj Singh
+8-0-44-1
+Virat Kohli
+1-0-6-0
+Nirav: ""Odd captaincy. Even without bowling sreesanth, the other 4 have enough overs between them to finish the innings. Why go to the part timers when they've done well the rest of the innings."" Here is Zaheer Khan
+Vishnu Udayan: ""How on the GOD's green earth could you call Yuvi as a part timer?!"" Ouch."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,38,"8 runs
+SL: 179/3
+CRR: 4.71
+Thilan Samaraweera
+21 (33b 2x4)
+Mahela Jayawardene
+65 (61b 8x4)
+Zaheer Khan
+6-3-14-1
+Yuvraj Singh
+8-0-44-1
+sudhir: ""@Nirav, its not about completing overs, its about trying to get wickets. Dhoni is trying best possible options to get wicket.... """
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,39,"2 runs • 1 wicket
+SL: 181/4
+CRR: 4.64
+Mahela Jayawardene
+66 (62b 8x4)
+Chamara Kapugedera
+1 (4b)
+Yuvraj Singh
+9-0-46-2
+Zaheer Khan
+6-3-14-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,40,"2 runs • 1 wicket
+SL: 183/5
+CRR: 4.57
+Nuwan Kulasekara
+1 (1b)
+Mahela Jayawardene
+67 (66b 8x4)
+Zaheer Khan
+7-3-16-2
+Yuvraj Singh
+9-0-46-2"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,41,"3 runs
+SL: 186/5
+CRR: 4.53
+Nuwan Kulasekara
+3 (5b)
+Mahela Jayawardene
+68 (68b 8x4)
+Yuvraj Singh
+10-0-49-2
+Zaheer Khan
+7-3-16-2
+Dhoni brings back Munaf now, the part-timers are done with their job"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,42,"6 runs
+SL: 192/5
+CRR: 4.57
+Nuwan Kulasekara
+8 (10b)
+Mahela Jayawardene
+69 (69b 8x4)
+Munaf Patel
+7-0-24-0
+Yuvraj Singh
+10-0-49-2
+Someone from the dressing room runs out to the Sri Lankan batsmen with a bottle of water, and lots of discussions ensue. Here is Harbhajan"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,43,"7 runs
+SL: 199/5
+CRR: 4.62
+Nuwan Kulasekara
+11 (13b)
+Mahela Jayawardene
+72 (72b 8x4)
+Harbhajan Singh
+8-0-37-1
+Munaf Patel
+7-0-24-0
+Gareth: ""I question Kapugerera's place in the side. Surely there's a chandimal or someone who offers more with the bat. He's had 80-odd matches listed as a batter, and has failed to notch up one ton, even when his side needs him."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,44,"6 runs
+SL: 205/5
+CRR: 4.65
+Nuwan Kulasekara
+12 (17b)
+Mahela Jayawardene
+77 (74b 9x4)
+Munaf Patel
+8-0-30-0
+Harbhajan Singh
+8-0-37-1
+India's over-rate has been woeful, and they will hardly have any time during the changeover"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,45,"6 runs
+SL: 211/5
+CRR: 4.68
+Nuwan Kulasekara
+16 (21b)
+Mahela Jayawardene
+79 (76b 9x4)
+Harbhajan Singh
+9-0-43-1
+Munaf Patel
+8-0-30-0
+No option but to take the batting Powerplay now, Zaheer to start it off
+John Garvey: ""Before the start of the game, a lot was made of the small boundaries at this ground. Even so, I note that no sixes have been hit..."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,46,"9 runs
+SL: 220/5
+CRR: 4.78
+Mahela Jayawardene
+85 (79b 10x4)
+Nuwan Kulasekara
+19 (24b)
+Zaheer Khan
+8-3-25-2
+Harbhajan Singh
+9-0-43-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,47,"11 runs
+SL: 231/5
+CRR: 4.91
+Nuwan Kulasekara
+25 (28b 1x4)
+Mahela Jayawardene
+90 (81b 11x4)
+Munaf Patel
+9-0-41-0
+Zaheer Khan
+8-3-25-2
+Arun: ""The Sri Lankan lower middle over has gotten away scot-free thanks to Mahela. Brilliant!"""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,48,"17 runs • 1 wicket
+SL: 248/6
+CRR: 5.16
+Mahela Jayawardene
+100 (85b 13x4)
+Zaheer Khan
+9-3-42-2
+Munaf Patel
+9-0-41-0
+Anwar: ""1999 a century by Desilva, 2003 by Ponting, 2007 by Gilchrist, all of them saw a victory. Will this be Mahela's winning century?"" Harbhajan to bowl now"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,49,"8 runs
+SL: 256/6
+CRR: 5.22
+Thisara Perera
+5 (4b 1x4)
+Mahela Jayawardene
+102 (87b 13x4)
+Harbhajan Singh
+10-0-50-1
+Zaheer Khan
+9-3-42-2"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,1,over_summary,50,"18 runs
+SL: 274/6
+CRR: 5.48
+Thisara Perera
+22 (9b 3x4 1x6)
+Mahela Jayawardene
+103 (88b 13x4)
+Zaheer Khan
+10-3-60-2
+Harbhajan Singh
+10-0-50-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,innings_header,,## Inning 2
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"6:50pm IST Thanks Abhishek. Boy, that was some innings from Mahela! The innings of the World Cup, possibly challenged only by KOB's blitz against England. Gilchrist and Ponting played classics in 2007 and 2003 finals... how good was this in comparison?"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Sivabhaskar: ""I've already started getting nightmares of a rain of in-swinging-yorkers -- Malinga !"" and ""A wicked kind of a compensation. Zaheer leaked at death what he contained at the birth."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Guru: ""I know this is far-fetched, but think of it - Sachin getting his 100th 100 and winning the title for India, chasing a big total in a high-pressure final. How better can things get?"" Well, so far this World Cup, India have managed to give their fans everything they wanted. This seems like the steepest demand of all, but who am I to bet against them pulling it off ..."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Calvin: ""I certainly don't see India getting these runs ,to win the world cup.As we can see there is some bounce in the wicket, which plays right into the hands of the Sri lankan's, bowlers."" Debatable, Calvin. As far as I know, Sri Lanka's bowlers prefer slow and low pitches, not ones with good carry and little turn (which is how it has been so far). Plus, this is a small outfield. But, in a World Cup final, 274 is a mountain."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Mazher: ""Mahela Jaywardene has never scored a century in losing cause, his all 13 centuries - before today - were match winning"" Not sure if true, but if it is, that's a staggering stat ..."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Swamy: ""India's strategy has now been inverted thanks to that brilliant knock from Mahela. What happens in the first 15 overs will now dictate whether India win. Anything less than 100+ for no loss or 1 wicket means its SL's game."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,meta,,"Right, not much of a break. The players are out there. Sehwag is ready, Sachin's with him. The fielders are in position. Can Sehwag hit a first-ball four again? India need a lot of those. Won't be easy against Malinga. This is Nitin Sundar to start off commentary for the chase."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,1,"4 runs • 1 wicket
+IND: 4/1
+CRR: 4.00 • RRR: 5.53
+Gautam Gambhir
+4 (4b 1x4)
+Sachin Tendulkar
+0 (0b)
+Lasith Malinga
+1-0-4-1
+Kulasekara comes on. Look out for the big swerving inducker. One slip in place."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,2,"6 runs
+IND: 10/1
+CRR: 5.00 • RRR: 5.52
+Gautam Gambhir
+5 (7b 1x4)
+Sachin Tendulkar
+4 (3b)
+Nuwan Kulasekara
+1-0-5-0
+Lasith Malinga
+1-0-4-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,3,"5 runs
+IND: 15/1
+CRR: 5.00 • RRR: 5.53
+Sachin Tendulkar
+8 (7b)
+Gautam Gambhir
+6 (9b 1x4)
+Lasith Malinga
+2-0-9-1
+Nuwan Kulasekara
+1-0-5-0
+Sanga moves up to the stumps. Gambhir can't do that walk down the pitch too easily."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,4,"11 runs
+IND: 26/1
+CRR: 6.50 • RRR: 5.41
+Sachin Tendulkar
+18 (12b 2x4)
+Gautam Gambhir
+7 (10b 1x4)
+Nuwan Kulasekara
+2-0-16-0
+Lasith Malinga
+2-0-9-1
+Malinga continues for a third over."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,5,"1 run
+IND: 27/1
+CRR: 5.40 • RRR: 5.51
+Sachin Tendulkar
+18 (13b 2x4)
+Gautam Gambhir
+8 (15b 1x4)
+Lasith Malinga
+3-0-10-1
+Nuwan Kulasekara
+2-0-16-0
+Bowling chance. Thisara Perera comes on."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,6,"4 runs
+IND: 31/1
+CRR: 5.16 • RRR: 5.54
+Gautam Gambhir
+12 (21b 2x4)
+Sachin Tendulkar
+18 (13b 2x4)
+Thisara Perera
+1-0-4-0
+Lasith Malinga
+3-0-10-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,7,"1 run • 1 wicket
+IND: 32/2
+CRR: 4.57 • RRR: 5.65
+Virat Kohli
+0 (5b)
+Gautam Gambhir
+12 (21b 2x4)
+Lasith Malinga
+4-0-11-2
+Thisara Perera
+1-0-4-0
+Kula comes back into the attack. Sanga stands up to Gambhir."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,8,"1 run
+IND: 33/2
+CRR: 4.12 • RRR: 5.76
+Virat Kohli
+0 (9b)
+Gautam Gambhir
+13 (23b 2x4)
+Nuwan Kulasekara
+3-0-17-0
+Lasith Malinga
+4-0-11-2
+Perera gets a change of ends. Malinga gets a break. Well deserved, too."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,9,"2 runs
+IND: 35/2
+CRR: 3.88 • RRR: 5.85
+Gautam Gambhir
+15 (29b 2x4)
+Virat Kohli
+0 (9b)
+Thisara Perera
+2-0-6-0
+Nuwan Kulasekara
+3-0-17-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,10,"6 runs
+IND: 41/2
+CRR: 4.10 • RRR: 5.85
+Virat Kohli
+6 (15b 1x4)
+Gautam Gambhir
+15 (29b 2x4)
+Nuwan Kulasekara
+4-0-23-0
+Thisara Perera
+2-0-6-0
+end of over 11
+9 runs
+IND: 50/2
+CRR: 4.54 • RRR: 5.76
+Virat Kohli
+8 (18b 1x4)
+Gautam Gambhir
+22 (32b 3x4)
+Thisara Perera
+3-0-15-0
+Nuwan Kulasekara
+4-0-23-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,12,"11 runs
+IND: 61/2
+CRR: 5.08 • RRR: 5.63
+Virat Kohli
+13 (20b 2x4)
+Gautam Gambhir
+28 (36b 4x4)
+Nuwan Kulasekara
+5-0-34-0
+Thisara Perera
+3-0-15-0
+Saad: ""Very important thing for SL here is that they should not start thinking that they have got it in their pocket by getting Sehwag and Sachin and I have a feeling that they have got a bit easy out there."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,13,"7 runs
+IND: 68/2
+CRR: 5.23 • RRR: 5.59
+Virat Kohli
+16 (23b 2x4)
+Gautam Gambhir
+30 (39b 4x4)
+Thisara Perera
+4-0-22-0
+Nuwan Kulasekara
+5-0-34-0
+Randiv comes on. Famous in India some time back for bowling a no-ball that denied Sehwag a ton. Was watching the World Cup in his home, got a call up, got into a flight, landed in Mumbai and here he is in the final! Round the wicket, with a slip."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,14,"4 runs
+IND: 72/2
+CRR: 5.14 • RRR: 5.63
+Virat Kohli
+17 (25b 2x4)
+Gautam Gambhir
+33 (43b 4x4)
+Suraj Randiv
+1-0-4-0
+Thisara Perera
+4-0-22-0
+Perera continues. Mahanama and Chandana are in the field - the latter looks as young as looked in the 96 World Cup!"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,15,"9 runs
+IND: 81/2
+CRR: 5.40 • RRR: 5.54
+Gautam Gambhir
+40 (46b 5x4)
+Virat Kohli
+19 (28b 2x4)
+Thisara Perera
+5-0-31-0
+Suraj Randiv
+1-0-4-0
+Thanks Nitin. The swings and roundabouts of this match continue, Sri Lanka were hot favourites when Tendulkar departed but now India might just have the edge, the way Gambhir and Kohli are playing. And how long until we see the great Murali?"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,16,"5 runs
+IND: 86/2
+CRR: 5.37 • RRR: 5.55
+Virat Kohli
+23 (32b 2x4)
+Gautam Gambhir
+41 (48b 5x4)
+Suraj Randiv
+2-0-9-0
+Thisara Perera
+5-0-31-0
+Dilshan comes on for a bowl now"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,17,"5 runs
+IND: 91/2
+CRR: 5.35 • RRR: 5.57
+Virat Kohli
+24 (37b 2x4)
+Gautam Gambhir
+42 (49b 5x4)
+Tillakaratne Dilshan
+1-0-5-0
+Suraj Randiv
+2-0-9-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,18,"5 runs
+IND: 96/2
+CRR: 5.33 • RRR: 5.59
+Virat Kohli
+24 (40b 2x4)
+Gautam Gambhir
+47 (52b 6x4)
+Suraj Randiv
+3-0-14-0
+Tillakaratne Dilshan
+1-0-5-0
+Here he is! Muttiah Muralitharan to bowl in his last match for Sri Lanka"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,19,"3 runs
+IND: 99/2
+CRR: 5.21 • RRR: 5.67
+Virat Kohli
+24 (42b 2x4)
+Gautam Gambhir
+50 (56b 6x4)
+Muthiah Muralidaran
+1-0-3-0
+Suraj Randiv
+3-0-14-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,20,"6 runs
+IND: 105/2
+CRR: 5.25 • RRR: 5.66
+Gautam Gambhir
+51 (60b 6x4)
+Virat Kohli
+29 (44b 3x4)
+Suraj Randiv
+4-0-20-0
+Muthiah Muralidaran
+1-0-3-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,21,"4 runs
+IND: 109/2
+CRR: 5.19 • RRR: 5.72
+Gautam Gambhir
+53 (64b 6x4)
+Virat Kohli
+31 (46b 3x4)
+Muthiah Muralidaran
+2-0-7-0
+Suraj Randiv
+4-0-20-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,22,"6 runs • 1 wicket
+IND: 115/3
+CRR: 5.22 • RRR: 5.71
+MS Dhoni
+0 (2b)
+Gautam Gambhir
+54 (65b 6x4)
+Tillakaratne Dilshan
+2-0-10-1
+Muthiah Muralidaran
+2-0-7-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,23,"2 runs
+IND: 117/3
+CRR: 5.08 • RRR: 5.85
+MS Dhoni
+0 (6b)
+Gautam Gambhir
+55 (67b 6x4)
+Muthiah Muralidaran
+3-0-8-0
+Tillakaratne Dilshan
+2-0-10-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,24,"5 runs
+IND: 122/3
+CRR: 5.08 • RRR: 5.88
+MS Dhoni
+1 (9b)
+Gautam Gambhir
+59 (70b 6x4)
+Tillakaratne Dilshan
+3-0-15-1
+Muthiah Muralidaran
+3-0-8-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,25,"2 runs
+IND: 124/3
+CRR: 4.96 • RRR: 6.04
+Gautam Gambhir
+60 (75b 6x4)
+MS Dhoni
+2 (10b)
+Muthiah Muralidaran
+4-0-10-0
+Tillakaratne Dilshan
+3-0-15-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,26,"4 runs
+IND: 128/3
+CRR: 4.92 • RRR: 6.12
+Gautam Gambhir
+62 (79b 6x4)
+MS Dhoni
+4 (12b)
+Tillakaratne Dilshan
+4-0-19-1
+Muthiah Muralidaran
+4-0-10-0
+Right. Time for a change. Slingy Malingy. There's Adam Gilchrist in the crowd. Sri Lanka have some rather unhappy memories of facing him in a World Cup final. They could very well win this one, though."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,27,"6 runs
+IND: 134/3
+CRR: 4.96 • RRR: 6.13
+Gautam Gambhir
+67 (83b 7x4)
+MS Dhoni
+5 (14b)
+Lasith Malinga
+5-0-17-2
+Tillakaratne Dilshan
+4-0-19-1"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,28,"8 runs
+IND: 142/3
+CRR: 5.07 • RRR: 6.04
+Gautam Gambhir
+74 (88b 8x4)
+MS Dhoni
+6 (15b)
+Tillakaratne Dilshan
+5-0-27-1
+Lasith Malinga
+5-0-17-2
+Murali is back on now"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,29,"4 runs
+IND: 146/3
+CRR: 5.03 • RRR: 6.14
+MS Dhoni
+8 (18b)
+Gautam Gambhir
+76 (91b 8x4)
+Muthiah Muralidaran
+5-0-14-0
+Tillakaratne Dilshan
+5-0-27-1
+Here comes Perera for a trundle. He has one slip in as Sangakkara looks for a wicket."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,30,"5 runs
+IND: 151/3
+CRR: 5.03 • RRR: 6.20
+MS Dhoni
+12 (21b)
+Gautam Gambhir
+76 (94b 8x4)
+Thisara Perera
+6-0-35-0
+Muthiah Muralidaran
+5-0-14-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,31,"6 runs
+IND: 157/3
+CRR: 5.06 • RRR: 6.21
+MS Dhoni
+17 (26b 1x4)
+Gautam Gambhir
+77 (95b 8x4)
+Muthiah Muralidaran
+6-0-20-0
+Thisara Perera
+6-0-35-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,32,"8 runs
+IND: 165/3
+CRR: 5.15 • RRR: 6.11
+MS Dhoni
+23 (30b 2x4)
+Gautam Gambhir
+79 (97b 8x4)
+Thisara Perera
+7-0-43-0
+Muthiah Muralidaran
+6-0-20-0
+Sravan: ""Where's Poonam? Close your eyes, everyone.""
+Thanks Brydon. What a lovely climax ahead of us."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,33,"5 runs
+IND: 170/3
+CRR: 5.15 • RRR: 6.17
+Gautam Gambhir
+80 (99b 8x4)
+MS Dhoni
+27 (34b 2x4)
+Nuwan Kulasekara
+6-0-39-0
+Thisara Perera
+7-0-43-0
+Chamara: ""@ Sarvan, It is too early to Poonam... Wait dear... Lions still in game.!!"""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,34,"5 runs
+IND: 175/3
+CRR: 5.14 • RRR: 6.25
+MS Dhoni
+29 (37b 2x4)
+Gautam Gambhir
+83 (102b 8x4)
+Suraj Randiv
+5-0-25-0
+Nuwan Kulasekara
+6-0-39-0
+Mojo: ""Regarding Poonam comments: Doesnt deserve the attention she's getting. Its just a sordid gimmick for cheap publicity by a wannabe starlet."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,35,"8 runs
+IND: 183/3
+CRR: 5.22 • RRR: 6.13
+Gautam Gambhir
+88 (106b 9x4)
+MS Dhoni
+31 (39b 2x4)
+Nuwan Kulasekara
+7-0-46-0
+Suraj Randiv
+5-0-25-0
+Kashyap: ""It used to be the ""fat lady singing"" these days its the ""hot lady stripping"". The times we live in. ""
+Siva: ""Wow! Ravi Shastri can hear what batsmen are saying in the middle of the pitch among all the noise!"" Ha!"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,36,"8 runs
+IND: 191/3
+CRR: 5.30 • RRR: 6.00
+Gautam Gambhir
+89 (109b 9x4)
+MS Dhoni
+38 (42b 3x4)
+Suraj Randiv
+6-0-33-0
+Nuwan Kulasekara
+7-0-46-0
+Here we go. Lasitha to bowl.
+Prashant: ""For a change it's not a one-sided WC final. Great fight from India."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,37,"5 runs
+IND: 196/3
+CRR: 5.29 • RRR: 6.07
+Gautam Gambhir
+89 (110b 9x4)
+MS Dhoni
+43 (47b 3x4)
+Lasith Malinga
+6-0-22-2
+Suraj Randiv
+6-0-33-0
+VInod: ""Brilliant to see India's very Aussie-like fightback, sensible batting and MSD playing a captain's knock after a long time at this crucial juncture. Sensational!""
+Meanwhile, Dhoni is getting slowly ready. Not sure whether he has a back problem or something else. He drinks some water, spits some, has a chat, and a laugh, with Gambhir.
+Circe Magnifica: "" Don't be so sure: I woudn't put it beyond the reach of the famous Great Indian Collapsing Trick to make this appear as one-sided as a floor within a couple of overs. ""
+Umair: ""@Prashant: Fight? What India is doing at the moment is anythign but fight. They are just cool. Even SriLanka is not showing any fight ;). ""
+Dhoni is struggling in pain there Some back problem. He is down on the ground. Physio is out there. Now he gets up and gets ready."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,38,"8 runs
+IND: 204/3
+CRR: 5.36 • RRR: 5.91
+MS Dhoni
+50 (52b 4x4)
+Gautam Gambhir
+90 (111b 9x4)
+Muthiah Muralidaran
+7-0-28-0
+Lasith Malinga
+6-0-22-2
+Dhoni has a poor batting record in both World Cups so far. However, he has a great record against Sri Lanka. Over 50 in 46 games against Lanka and over 100 in the 15 games played in India."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,39,"6 runs
+IND: 210/3
+CRR: 5.38 • RRR: 5.90
+Gautam Gambhir
+93 (115b 9x4)
+MS Dhoni
+52 (54b 4x4)
+Lasith Malinga
+7-0-28-2
+Muthiah Muralidaran
+7-0-28-0"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,40,"11 runs
+IND: 221/3
+CRR: 5.52 • RRR: 5.40
+Gautam Gambhir
+96 (117b 9x4)
+MS Dhoni
+59 (58b 5x4)
+Muthiah Muralidaran
+8-0-39-0
+Lasith Malinga
+7-0-28-2
+Randiv wipes the ball with his towel. I remember Ranatunga used to always keep a short towel in his behind."
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,41,"2 runs
+IND: 223/3
+CRR: 5.43 • RRR: 5.77
+MS Dhoni
+60 (61b 5x4)
+Gautam Gambhir
+97 (120b 9x4)
+Suraj Randiv
+7-0-35-0
+Muthiah Muralidaran
+8-0-39-0
+Dushyant Garg: ""In India, Venkatesh Prasad used to keep one small towel tucked back under his back.""
+Zane sends this gem: ""A short towel in his behind? Explains the poor running."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,42,"4 runs • 1 wicket
+IND: 227/4
+CRR: 5.40 • RRR: 6.00
+Yuvraj Singh
+4 (4b 1x4)
+MS Dhoni
+60 (61b 5x4)
+Thisara Perera
+8-0-47-1
+Suraj Randiv
+7-0-35-0
+Ball is being changed again
+Roopak: ""Gambhir not getting his 100 doesn't take away anything from his innings. We still remember Tendulkar's 98 against Pakistan in 2003 WC as a classic. Contribution matters.. not the count!"""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,43,"5 runs
+IND: 232/4
+CRR: 5.39 • RRR: 6.14
+Yuvraj Singh
+5 (6b 1x4)
+MS Dhoni
+62 (65b 5x4)
+Suraj Randiv
+8-0-38-0
+Thisara Perera
+8-0-47-1
+Adarsh: ""@Roopak: it's not about getting the hundred but finishing the game. When he was there, SL had no chance. Now they have."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,44,"8 runs
+IND: 240/4
+CRR: 5.45 • RRR: 5.83
+MS Dhoni
+69 (70b 5x4 1x6)
+Yuvraj Singh
+6 (7b 1x4)
+Thisara Perera
+9-0-55-1
+Suraj Randiv
+8-0-38-0
+Mukesh: ""Loved the spirit, courage and maturity of Dhoni to come ahead of inform Yuvraj in pressure cooker situation and preserve Yuvi for the finish line."""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,45,"5 runs
+IND: 245/4
+CRR: 5.44 • RRR: 6.00
+Yuvraj Singh
+9 (11b 1x4)
+MS Dhoni
+71 (72b 5x4 1x6)
+Suraj Randiv
+9-0-43-0
+Thisara Perera
+9-0-55-1
+Shaeed: ""So Dar is still undefeated. He should be getting the Best Umpire of the WC2011 award.""
+Ravi: ""going for DRS against Aleem Dar proved to the useless thing of the tournament.. ""
+Rohit: ""Anyone up for a super over to spice things up ?"" Let's see whether Malinga has any fuel left in him.
+Srinivas: ""@Mukhesh - Its not just courage, its the strategy of a left and right combination at the center. 100 run partnership..thts the way to do it"""
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,46,"3 runs
+IND: 248/4
+CRR: 5.39 • RRR: 6.75
+Yuvraj Singh
+12 (17b 1x4)
+MS Dhoni
+71 (72b 5x4 1x6)
+Lasith Malinga
+8-0-31-2
+Suraj Randiv
+9-0-43-0
+Mager: ""Here comes the biggest threat.. Batting powerplay. Please don't collapse. For the last time..""
+Ram: ""Pink Floyd: 'Hanging on quiet desperation is the English way'. Very apt description of this match; for both teams."" Who will be comfortably numb at the end of it?"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,47,"11 runs
+IND: 259/4
+CRR: 5.51 • RRR: 5.33
+Yuvraj Singh
+18 (21b 2x4)
+MS Dhoni
+76 (74b 6x4 1x6)
+Nuwan Kulasekara
+8-0-57-0
+Lasith Malinga
+8-0-31-2
+ICC have just tweeted that Yuvraj Singh is the Player of the tournament! Congrats boss!"
+CWC_2011_final_ALL,CWC_2011_final_ALL.txt,2,over_summary,48,"11 runs
+IND: 270/4
+CRR: 5.62 • RRR: 2.50
+Yuvraj Singh
+20 (23b 2x4)
+MS Dhoni
+85 (78b 8x4 1x6)
+Lasith Malinga
+9-0-42-2
+Nuwan Kulasekara
+8-0-57-0
+Nitin: ""Thnx cricinfo...u have just messed up the suspense of Player of the tournament for the millions who r NOT on twitter!"" Ha! It was my pleasure!"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,meta,,"6:50pm ISTThanks Abhishek. Boy, that was the innings of the World Cup from Mahela!"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,1,"Maiden
+SL: 2/0
+CRR: 2.00
+Tillakaratne Dilshan
+0 (1b)
+Upul Tharanga
+0 (5b)
+Zaheer Khan
+1-1-0-0
+""Will Sreesanth win or lose this world cup? Depends which one of him turns up,"" says Skippy. Well here he is, bowling from over the wicket. He hasn't played since the opening game."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,2,"5 runs
+SL: 7/0
+CRR: 3.50
+Tillakaratne Dilshan
+3 (7b)
+Upul Tharanga
+1 (6b)
+Sreesanth
+1-0-5-0
+Zaheer Khan
+1-1-0-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,3,"Maiden
+SL: 7/0
+CRR: 2.33
+Upul Tharanga
+1 (12b)
+Tillakaratne Dilshan
+3 (7b)
+Zaheer Khan
+2-2-0-0
+Sreesanth
+1-0-5-0
+""I swear if Sreesanth removed all his jewellery he would bowl 5kph faster. Could do with his hair trimming too,"" says Wombat. How's your grandma wombat? (If it is the same wombat!)"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,4,"2 runs
+SL: 9/0
+CRR: 2.25
+Tillakaratne Dilshan
+4 (12b)
+Upul Tharanga
+2 (13b)
+Sreesanth
+2-0-7-0
+Zaheer Khan
+2-2-0-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,5,"Maiden
+SL: 9/0
+CRR: 1.80
+Upul Tharanga
+2 (19b)
+Tillakaratne Dilshan
+4 (12b)
+Zaheer Khan
+3-3-0-0
+Sreesanth
+2-0-7-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,6,"8 runs
+SL: 17/0
+CRR: 2.83
+Tillakaratne Dilshan
+12 (18b 2x4)
+Upul Tharanga
+2 (19b)
+Sreesanth
+3-0-15-0
+Zaheer Khan
+3-3-0-0
+""What a change 8 years bring -- Zaheer in 2003 0/28 in 3 overs; in 2011 3 maidens in 3 overs.. Impressive even though bowling to Hayden/Gilly is different from bowling to Dilshan/Tharanga,"" says Sundar."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,7,"2 runs • 1 wicket
+SL: 19/1
+CRR: 2.71
+Kumar Sangakkara
+1 (4b)
+Tillakaratne Dilshan
+13 (19b 2x4)
+Zaheer Khan
+4-3-2-1
+Sreesanth
+3-0-15-0
+Munaf replaces Sreesanth"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,8,"5 runs
+SL: 24/1
+CRR: 3.00
+Tillakaratne Dilshan
+16 (23b 2x4)
+Kumar Sangakkara
+2 (6b)
+Munaf Patel
+1-0-5-0
+Zaheer Khan
+4-3-2-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,9,"4 runs
+SL: 28/1
+CRR: 3.11
+Kumar Sangakkara
+3 (10b)
+Tillakaratne Dilshan
+19 (25b 2x4)
+Zaheer Khan
+5-3-6-1
+Munaf Patel
+1-0-5-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,10,"3 runs
+SL: 31/1
+CRR: 3.10
+Kumar Sangakkara
+3 (11b)
+Tillakaratne Dilshan
+22 (30b 2x4)
+Munaf Patel
+2-0-8-0
+Zaheer Khan
+5-3-6-1
+Sreesanth replaces Zaheer."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,11,"3 runs
+SL: 34/1
+CRR: 3.09
+Kumar Sangakkara
+3 (14b)
+Tillakaratne Dilshan
+25 (33b 2x4)
+Sreesanth
+4-0-18-0
+Munaf Patel
+2-0-8-0
+""Any info on why Sangakarra's helmet looks so different from everyone else? It looks more aerodynamic!"" says Bobby. It looks like a platypus."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,12,"5 runs
+SL: 39/1
+CRR: 3.25
+Kumar Sangakkara
+7 (19b 1x4)
+Tillakaratne Dilshan
+26 (34b 2x4)
+Munaf Patel
+3-0-13-0
+Sreesanth
+4-0-18-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,13,"15 runs
+SL: 54/1
+CRR: 4.15
+Tillakaratne Dilshan
+31 (36b 3x4)
+Kumar Sangakkara
+16 (24b 3x4)
+Sreesanth
+5-0-33-0
+Munaf Patel
+3-0-13-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,14,"2 runs
+SL: 56/1
+CRR: 4.00
+Kumar Sangakkara
+17 (29b 3x4)
+Tillakaratne Dilshan
+31 (37b 3x4)
+Munaf Patel
+4-0-14-0
+Sreesanth
+5-0-33-0
+Now then, it's time for spin. Here's Harbhajan with one over left in the powerplay.
+Thanks George. It's been a good start from India but Sri Lanka have been steady, and with Sangakkara and Dilshan both starting to look good, this match is set up well. Personally, I reckon Kumar looks like he's wearing Donald Duck on his head, but there you go."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,15,"2 runs
+SL: 58/1
+CRR: 3.86
+Tillakaratne Dilshan
+32 (42b 3x4)
+Kumar Sangakkara
+18 (30b 3x4)
+Harbhajan Singh
+1-0-2-0
+Munaf Patel
+4-0-14-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,16,"2 runs
+SL: 60/1
+CRR: 3.75
+Kumar Sangakkara
+19 (32b 3x4)
+Tillakaratne Dilshan
+33 (46b 3x4)
+Munaf Patel
+5-0-16-0
+Harbhajan Singh
+1-0-2-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,17,"3 runs • 1 wicket
+SL: 63/2
+CRR: 3.70
+Mahela Jayawardene
+2 (2b)
+Kumar Sangakkara
+20 (33b 3x4)
+Harbhajan Singh
+2-0-5-1
+Munaf Patel
+5-0-16-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,18,"2 runs
+SL: 65/2
+CRR: 3.61
+Mahela Jayawardene
+4 (8b)
+Kumar Sangakkara
+20 (33b 3x4)
+Munaf Patel
+6-0-18-0
+Harbhajan Singh
+2-0-5-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,19,"12 runs
+SL: 77/2
+CRR: 4.05
+Kumar Sangakkara
+26 (36b 4x4)
+Mahela Jayawardene
+10 (11b 1x4)
+Harbhajan Singh
+3-0-17-1
+Munaf Patel
+6-0-18-0
+Now then, Sreesanth makes his return. Interesting move."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,20,"6 runs
+SL: 83/2
+CRR: 4.15
+Mahela Jayawardene
+15 (16b 2x4)
+Kumar Sangakkara
+27 (37b 4x4)
+Sreesanth
+6-0-39-0
+Harbhajan Singh
+3-0-17-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,21,"3 runs
+SL: 86/2
+CRR: 4.09
+Kumar Sangakkara
+30 (43b 4x4)
+Mahela Jayawardene
+15 (16b 2x4)
+Harbhajan Singh
+4-0-20-1
+Sreesanth
+6-0-39-0
+Sreesanth is off after a one-over spell and Dhoni wants spin from both ends. It's Yuuuuvie time!"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,22,"8 runs
+SL: 94/2
+CRR: 4.27
+Mahela Jayawardene
+21 (19b 3x4)
+Kumar Sangakkara
+32 (46b 4x4)
+Yuvraj Singh
+1-0-8-0
+Harbhajan Singh
+4-0-20-1
+Slip and leg slip in place now"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,23,"2 runs
+SL: 96/2
+CRR: 4.17
+Mahela Jayawardene
+22 (21b 3x4)
+Kumar Sangakkara
+33 (50b 4x4)
+Harbhajan Singh
+5-0-22-1
+Yuvraj Singh
+1-0-8-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,24,"4 runs
+SL: 100/2
+CRR: 4.16
+Kumar Sangakkara
+36 (54b 4x4)
+Mahela Jayawardene
+23 (23b 3x4)
+Yuvraj Singh
+2-0-12-0
+Harbhajan Singh
+5-0-22-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,25,"5 runs
+SL: 105/2
+CRR: 4.20
+Mahela Jayawardene
+25 (25b 3x4)
+Kumar Sangakkara
+39 (58b 4x4)
+Harbhajan Singh
+6-0-27-1
+Yuvraj Singh
+2-0-12-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,26,"6 runs
+SL: 111/2
+CRR: 4.26
+Mahela Jayawardene
+30 (30b 4x4)
+Kumar Sangakkara
+40 (59b 4x4)
+Yuvraj Singh
+3-0-18-0
+Harbhajan Singh
+6-0-27-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,27,"3 runs
+SL: 114/2
+CRR: 4.22
+Mahela Jayawardene
+32 (32b 4x4)
+Kumar Sangakkara
+41 (63b 4x4)
+Harbhajan Singh
+7-0-30-1
+Yuvraj Singh
+3-0-18-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,28,"8 runs • 1 wicket
+SL: 122/3
+CRR: 4.35
+Thilan Samaraweera
+0 (1b)
+Mahela Jayawardene
+33 (33b 4x4)
+Yuvraj Singh
+4-0-26-1
+Harbhajan Singh
+7-0-30-1
+Well, how important is Mahela Jayawardene now? He's well set and you'd think he has to bat most of the way through this innings, to give Sri Lanka their best chance. Sreesanth is back. Let's dance."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,29,"6 runs
+SL: 128/3
+CRR: 4.41
+Thilan Samaraweera
+5 (5b 1x4)
+Mahela Jayawardene
+34 (35b 4x4)
+Sreesanth
+7-0-45-0
+Yuvraj Singh
+4-0-26-1
+Thanks, Brydon. Huge wicket for India just before drinks. Kumar was batting so serenely, and so effectively
+Rajender: ""SREE is not his self, I guess the agrro is missing and he looking meagre, somebody needs to pump him up.."" India's over rate has been atrocious. Yuvraj to continue after drinks."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,30,"4 runs
+SL: 132/3
+CRR: 4.40
+Thilan Samaraweera
+9 (11b 2x4)
+Mahela Jayawardene
+34 (35b 4x4)
+Yuvraj Singh
+5-0-30-1
+Sreesanth
+7-0-45-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,31,"7 runs
+SL: 139/3
+CRR: 4.48
+Mahela Jayawardene
+40 (40b 5x4)
+Thilan Samaraweera
+10 (12b 2x4)
+Sreesanth
+8-0-52-0
+Yuvraj Singh
+5-0-30-1
+Mandeep: ""I think Dhoni is going wrong in trying and finishing SreeSanth's Overs...I would rather have Sachin or Raina bowl a few overs..atleast there will be a slight chance of a wicket."""
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,32,"4 runs
+SL: 143/3
+CRR: 4.46
+Thilan Samaraweera
+12 (15b 2x4)
+Mahela Jayawardene
+42 (43b 5x4)
+Yuvraj Singh
+6-0-34-1
+Sreesanth
+8-0-52-0
+Sachin Tendulkar in to the attack, to a loud roar"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,33,"5 runs
+SL: 148/3
+CRR: 4.48
+Thilan Samaraweera
+14 (19b 2x4)
+Mahela Jayawardene
+44 (45b 5x4)
+Sachin Tendulkar
+1-0-5-0
+Yuvraj Singh
+6-0-34-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,34,"7 runs
+SL: 155/3
+CRR: 4.55
+Mahela Jayawardene
+50 (49b 6x4)
+Thilan Samaraweera
+15 (21b 2x4)
+Yuvraj Singh
+7-0-41-1
+Sachin Tendulkar
+1-0-5-0"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,35,"7 runs
+SL: 162/3
+CRR: 4.62
+Thilan Samaraweera
+16 (24b 2x4)
+Mahela Jayawardene
+54 (52b 6x4)
+Sachin Tendulkar
+2-0-12-0
+Yuvraj Singh
+7-0-41-1
+Now Dhoni gives the ball to Virat Kohli, hmm"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,36,"6 runs
+SL: 168/3
+CRR: 4.66
+Mahela Jayawardene
+59 (56b 7x4)
+Thilan Samaraweera
+17 (26b 2x4)
+Virat Kohli
+1-0-6-0
+Sachin Tendulkar
+2-0-12-0
+The procession of part-timers continues. Here is Yuvraj again"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,37,"3 runs
+SL: 171/3
+CRR: 4.62
+Thilan Samaraweera
+19 (29b 2x4)
+Mahela Jayawardene
+60 (59b 7x4)
+Yuvraj Singh
+8-0-44-1
+Virat Kohli
+1-0-6-0
+Nirav: ""Odd captaincy. Even without bowling sreesanth, the other 4 have enough overs between them to finish the innings. Why go to the part timers when they've done well the rest of the innings."" Here is Zaheer Khan
+Vishnu Udayan: ""How on the GOD's green earth could you call Yuvi as a part timer?!"" Ouch."
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,38,"8 runs
+SL: 179/3
+CRR: 4.71
+Thilan Samaraweera
+21 (33b 2x4)
+Mahela Jayawardene
+65 (61b 8x4)
+Zaheer Khan
+6-3-14-1
+Yuvraj Singh
+8-0-44-1
+sudhir: ""@Nirav, its not about completing overs, its about trying to get wickets. Dhoni is trying best possible options to get wicket.... """
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,39,"2 runs • 1 wicket
+SL: 181/4
+CRR: 4.64
+Mahela Jayawardene
+66 (62b 8x4)
+Chamara Kapugedera
+1 (4b)
+Yuvraj Singh
+9-0-46-2
+Zaheer Khan
+6-3-14-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,40,"2 runs • 1 wicket
+SL: 183/5
+CRR: 4.57
+Nuwan Kulasekara
+1 (1b)
+Mahela Jayawardene
+67 (66b 8x4)
+Zaheer Khan
+7-3-16-2
+Yuvraj Singh
+9-0-46-2"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,41,"3 runs
+SL: 186/5
+CRR: 4.53
+Nuwan Kulasekara
+3 (5b)
+Mahela Jayawardene
+68 (68b 8x4)
+Yuvraj Singh
+10-0-49-2
+Zaheer Khan
+7-3-16-2
+Dhoni brings back Munaf now, the part-timers are done with their job"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,42,"6 runs
+SL: 192/5
+CRR: 4.57
+Nuwan Kulasekara
+8 (10b)
+Mahela Jayawardene
+69 (69b 8x4)
+Munaf Patel
+7-0-24-0
+Yuvraj Singh
+10-0-49-2
+Someone from the dressing room runs out to the Sri Lankan batsmen with a bottle of water, and lots of discussions ensue. Here is Harbhajan"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,43,"7 runs
+SL: 199/5
+CRR: 4.62
+Nuwan Kulasekara
+11 (13b)
+Mahela Jayawardene
+72 (72b 8x4)
+Harbhajan Singh
+8-0-37-1
+Munaf Patel
+7-0-24-0
+Gareth: ""I question Kapugerera's place in the side. Surely there's a chandimal or someone who offers more with the bat. He's had 80-odd matches listed as a batter, and has failed to notch up one ton, even when his side needs him."""
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,44,"6 runs
+SL: 205/5
+CRR: 4.65
+Nuwan Kulasekara
+12 (17b)
+Mahela Jayawardene
+77 (74b 9x4)
+Munaf Patel
+8-0-30-0
+Harbhajan Singh
+8-0-37-1
+India's over-rate has been woeful, and they will hardly have any time during the changeover"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,45,"6 runs
+SL: 211/5
+CRR: 4.68
+Nuwan Kulasekara
+16 (21b)
+Mahela Jayawardene
+79 (76b 9x4)
+Harbhajan Singh
+9-0-43-1
+Munaf Patel
+8-0-30-0
+No option but to take the batting Powerplay now, Zaheer to start it off
+John Garvey: ""Before the start of the game, a lot was made of the small boundaries at this ground. Even so, I note that no sixes have been hit..."""
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,46,"9 runs
+SL: 220/5
+CRR: 4.78
+Mahela Jayawardene
+85 (79b 10x4)
+Nuwan Kulasekara
+19 (24b)
+Zaheer Khan
+8-3-25-2
+Harbhajan Singh
+9-0-43-1"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,47,"11 runs
+SL: 231/5
+CRR: 4.91
+Nuwan Kulasekara
+25 (28b 1x4)
+Mahela Jayawardene
+90 (81b 11x4)
+Munaf Patel
+9-0-41-0
+Zaheer Khan
+8-3-25-2
+Arun: ""The Sri Lankan lower middle over has gotten away scot-free thanks to Mahela. Brilliant!"""
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,48,"17 runs • 1 wicket
+SL: 248/6
+CRR: 5.16
+Mahela Jayawardene
+100 (85b 13x4)
+Zaheer Khan
+9-3-42-2
+Munaf Patel
+9-0-41-0
+Anwar: ""1999 a century by Desilva, 2003 by Ponting, 2007 by Gilchrist, all of them saw a victory. Will this be Mahela's winning century?"" Harbhajan to bowl now"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,49,"8 runs
+SL: 256/6
+CRR: 5.22
+Thisara Perera
+5 (4b 1x4)
+Mahela Jayawardene
+102 (87b 13x4)
+Harbhajan Singh
+10-0-50-1
+Zaheer Khan
+9-3-42-2"
+ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo,ODI_CWC_2011_final_inning1_SL_commantary_full_cricinfo.txt,1,over_summary,50,"18 runs
+SL: 274/6
+CRR: 5.48
+Thisara Perera
+22 (9b 3x4 1x6)
+Mahela Jayawardene
+103 (88b 13x4)
+Zaheer Khan
+10-3-60-2
+Harbhajan Singh
+10-0-50-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"6:50pm IST Thanks Abhishek. Boy, that was some innings from Mahela! The innings of the World Cup, possibly challenged only by KOB's blitz against England. Gilchrist and Ponting played classics in 2007 and 2003 finals... how good was this in comparison?"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Sivabhaskar: ""I've already started getting nightmares of a rain of in-swinging-yorkers -- Malinga !"" and ""A wicked kind of a compensation. Zaheer leaked at death what he contained at the birth."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Guru: ""I know this is far-fetched, but think of it - Sachin getting his 100th 100 and winning the title for India, chasing a big total in a high-pressure final. How better can things get?"" Well, so far this World Cup, India have managed to give their fans everything they wanted. This seems like the steepest demand of all, but who am I to bet against them pulling it off ..."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Calvin: ""I certainly don't see India getting these runs ,to win the world cup.As we can see there is some bounce in the wicket, which plays right into the hands of the Sri lankan's, bowlers."" Debatable, Calvin. As far as I know, Sri Lanka's bowlers prefer slow and low pitches, not ones with good carry and little turn (which is how it has been so far). Plus, this is a small outfield. But, in a World Cup final, 274 is a mountain."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Mazher: ""Mahela Jaywardene has never scored a century in losing cause, his all 13 centuries - before today - were match winning"" Not sure if true, but if it is, that's a staggering stat ..."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Swamy: ""India's strategy has now been inverted thanks to that brilliant knock from Mahela. What happens in the first 15 overs will now dictate whether India win. Anything less than 100+ for no loss or 1 wicket means its SL's game."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,meta,,"Right, not much of a break. The players are out there. Sehwag is ready, Sachin's with him. The fielders are in position. Can Sehwag hit a first-ball four again? India need a lot of those. Won't be easy against Malinga. This is Nitin Sundar to start off commentary for the chase."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,1,"4 runs • 1 wicket
+IND: 4/1
+CRR: 4.00 • RRR: 5.53
+Gautam Gambhir
+4 (4b 1x4)
+Sachin Tendulkar
+0 (0b)
+Lasith Malinga
+1-0-4-1
+Kulasekara comes on. Look out for the big swerving inducker. One slip in place."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,2,"6 runs
+IND: 10/1
+CRR: 5.00 • RRR: 5.52
+Gautam Gambhir
+5 (7b 1x4)
+Sachin Tendulkar
+4 (3b)
+Nuwan Kulasekara
+1-0-5-0
+Lasith Malinga
+1-0-4-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,3,"5 runs
+IND: 15/1
+CRR: 5.00 • RRR: 5.53
+Sachin Tendulkar
+8 (7b)
+Gautam Gambhir
+6 (9b 1x4)
+Lasith Malinga
+2-0-9-1
+Nuwan Kulasekara
+1-0-5-0
+Sanga moves up to the stumps. Gambhir can't do that walk down the pitch too easily."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,4,"11 runs
+IND: 26/1
+CRR: 6.50 • RRR: 5.41
+Sachin Tendulkar
+18 (12b 2x4)
+Gautam Gambhir
+7 (10b 1x4)
+Nuwan Kulasekara
+2-0-16-0
+Lasith Malinga
+2-0-9-1
+Malinga continues for a third over."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,5,"1 run
+IND: 27/1
+CRR: 5.40 • RRR: 5.51
+Sachin Tendulkar
+18 (13b 2x4)
+Gautam Gambhir
+8 (15b 1x4)
+Lasith Malinga
+3-0-10-1
+Nuwan Kulasekara
+2-0-16-0
+Bowling chance. Thisara Perera comes on."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,6,"4 runs
+IND: 31/1
+CRR: 5.16 • RRR: 5.54
+Gautam Gambhir
+12 (21b 2x4)
+Sachin Tendulkar
+18 (13b 2x4)
+Thisara Perera
+1-0-4-0
+Lasith Malinga
+3-0-10-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,7,"1 run • 1 wicket
+IND: 32/2
+CRR: 4.57 • RRR: 5.65
+Virat Kohli
+0 (5b)
+Gautam Gambhir
+12 (21b 2x4)
+Lasith Malinga
+4-0-11-2
+Thisara Perera
+1-0-4-0
+Kula comes back into the attack. Sanga stands up to Gambhir."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,8,"1 run
+IND: 33/2
+CRR: 4.12 • RRR: 5.76
+Virat Kohli
+0 (9b)
+Gautam Gambhir
+13 (23b 2x4)
+Nuwan Kulasekara
+3-0-17-0
+Lasith Malinga
+4-0-11-2
+Perera gets a change of ends. Malinga gets a break. Well deserved, too."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,9,"2 runs
+IND: 35/2
+CRR: 3.88 • RRR: 5.85
+Gautam Gambhir
+15 (29b 2x4)
+Virat Kohli
+0 (9b)
+Thisara Perera
+2-0-6-0
+Nuwan Kulasekara
+3-0-17-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,10,"6 runs
+IND: 41/2
+CRR: 4.10 • RRR: 5.85
+Virat Kohli
+6 (15b 1x4)
+Gautam Gambhir
+15 (29b 2x4)
+Nuwan Kulasekara
+4-0-23-0
+Thisara Perera
+2-0-6-0
+end of over 11
+9 runs
+IND: 50/2
+CRR: 4.54 • RRR: 5.76
+Virat Kohli
+8 (18b 1x4)
+Gautam Gambhir
+22 (32b 3x4)
+Thisara Perera
+3-0-15-0
+Nuwan Kulasekara
+4-0-23-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,12,"11 runs
+IND: 61/2
+CRR: 5.08 • RRR: 5.63
+Virat Kohli
+13 (20b 2x4)
+Gautam Gambhir
+28 (36b 4x4)
+Nuwan Kulasekara
+5-0-34-0
+Thisara Perera
+3-0-15-0
+Saad: ""Very important thing for SL here is that they should not start thinking that they have got it in their pocket by getting Sehwag and Sachin and I have a feeling that they have got a bit easy out there."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,13,"7 runs
+IND: 68/2
+CRR: 5.23 • RRR: 5.59
+Virat Kohli
+16 (23b 2x4)
+Gautam Gambhir
+30 (39b 4x4)
+Thisara Perera
+4-0-22-0
+Nuwan Kulasekara
+5-0-34-0
+Randiv comes on. Famous in India some time back for bowling a no-ball that denied Sehwag a ton. Was watching the World Cup in his home, got a call up, got into a flight, landed in Mumbai and here he is in the final! Round the wicket, with a slip."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,14,"4 runs
+IND: 72/2
+CRR: 5.14 • RRR: 5.63
+Virat Kohli
+17 (25b 2x4)
+Gautam Gambhir
+33 (43b 4x4)
+Suraj Randiv
+1-0-4-0
+Thisara Perera
+4-0-22-0
+Perera continues. Mahanama and Chandana are in the field - the latter looks as young as looked in the 96 World Cup!"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,15,"9 runs
+IND: 81/2
+CRR: 5.40 • RRR: 5.54
+Gautam Gambhir
+40 (46b 5x4)
+Virat Kohli
+19 (28b 2x4)
+Thisara Perera
+5-0-31-0
+Suraj Randiv
+1-0-4-0
+Thanks Nitin. The swings and roundabouts of this match continue, Sri Lanka were hot favourites when Tendulkar departed but now India might just have the edge, the way Gambhir and Kohli are playing. And how long until we see the great Murali?"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,16,"5 runs
+IND: 86/2
+CRR: 5.37 • RRR: 5.55
+Virat Kohli
+23 (32b 2x4)
+Gautam Gambhir
+41 (48b 5x4)
+Suraj Randiv
+2-0-9-0
+Thisara Perera
+5-0-31-0
+Dilshan comes on for a bowl now"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,17,"5 runs
+IND: 91/2
+CRR: 5.35 • RRR: 5.57
+Virat Kohli
+24 (37b 2x4)
+Gautam Gambhir
+42 (49b 5x4)
+Tillakaratne Dilshan
+1-0-5-0
+Suraj Randiv
+2-0-9-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,18,"5 runs
+IND: 96/2
+CRR: 5.33 • RRR: 5.59
+Virat Kohli
+24 (40b 2x4)
+Gautam Gambhir
+47 (52b 6x4)
+Suraj Randiv
+3-0-14-0
+Tillakaratne Dilshan
+1-0-5-0
+Here he is! Muttiah Muralitharan to bowl in his last match for Sri Lanka"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,19,"3 runs
+IND: 99/2
+CRR: 5.21 • RRR: 5.67
+Virat Kohli
+24 (42b 2x4)
+Gautam Gambhir
+50 (56b 6x4)
+Muthiah Muralidaran
+1-0-3-0
+Suraj Randiv
+3-0-14-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,20,"6 runs
+IND: 105/2
+CRR: 5.25 • RRR: 5.66
+Gautam Gambhir
+51 (60b 6x4)
+Virat Kohli
+29 (44b 3x4)
+Suraj Randiv
+4-0-20-0
+Muthiah Muralidaran
+1-0-3-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,21,"4 runs
+IND: 109/2
+CRR: 5.19 • RRR: 5.72
+Gautam Gambhir
+53 (64b 6x4)
+Virat Kohli
+31 (46b 3x4)
+Muthiah Muralidaran
+2-0-7-0
+Suraj Randiv
+4-0-20-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,22,"6 runs • 1 wicket
+IND: 115/3
+CRR: 5.22 • RRR: 5.71
+MS Dhoni
+0 (2b)
+Gautam Gambhir
+54 (65b 6x4)
+Tillakaratne Dilshan
+2-0-10-1
+Muthiah Muralidaran
+2-0-7-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,23,"2 runs
+IND: 117/3
+CRR: 5.08 • RRR: 5.85
+MS Dhoni
+0 (6b)
+Gautam Gambhir
+55 (67b 6x4)
+Muthiah Muralidaran
+3-0-8-0
+Tillakaratne Dilshan
+2-0-10-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,24,"5 runs
+IND: 122/3
+CRR: 5.08 • RRR: 5.88
+MS Dhoni
+1 (9b)
+Gautam Gambhir
+59 (70b 6x4)
+Tillakaratne Dilshan
+3-0-15-1
+Muthiah Muralidaran
+3-0-8-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,25,"2 runs
+IND: 124/3
+CRR: 4.96 • RRR: 6.04
+Gautam Gambhir
+60 (75b 6x4)
+MS Dhoni
+2 (10b)
+Muthiah Muralidaran
+4-0-10-0
+Tillakaratne Dilshan
+3-0-15-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,26,"4 runs
+IND: 128/3
+CRR: 4.92 • RRR: 6.12
+Gautam Gambhir
+62 (79b 6x4)
+MS Dhoni
+4 (12b)
+Tillakaratne Dilshan
+4-0-19-1
+Muthiah Muralidaran
+4-0-10-0
+Right. Time for a change. Slingy Malingy. There's Adam Gilchrist in the crowd. Sri Lanka have some rather unhappy memories of facing him in a World Cup final. They could very well win this one, though."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,27,"6 runs
+IND: 134/3
+CRR: 4.96 • RRR: 6.13
+Gautam Gambhir
+67 (83b 7x4)
+MS Dhoni
+5 (14b)
+Lasith Malinga
+5-0-17-2
+Tillakaratne Dilshan
+4-0-19-1"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,28,"8 runs
+IND: 142/3
+CRR: 5.07 • RRR: 6.04
+Gautam Gambhir
+74 (88b 8x4)
+MS Dhoni
+6 (15b)
+Tillakaratne Dilshan
+5-0-27-1
+Lasith Malinga
+5-0-17-2
+Murali is back on now"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,29,"4 runs
+IND: 146/3
+CRR: 5.03 • RRR: 6.14
+MS Dhoni
+8 (18b)
+Gautam Gambhir
+76 (91b 8x4)
+Muthiah Muralidaran
+5-0-14-0
+Tillakaratne Dilshan
+5-0-27-1
+Here comes Perera for a trundle. He has one slip in as Sangakkara looks for a wicket."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,30,"5 runs
+IND: 151/3
+CRR: 5.03 • RRR: 6.20
+MS Dhoni
+12 (21b)
+Gautam Gambhir
+76 (94b 8x4)
+Thisara Perera
+6-0-35-0
+Muthiah Muralidaran
+5-0-14-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,31,"6 runs
+IND: 157/3
+CRR: 5.06 • RRR: 6.21
+MS Dhoni
+17 (26b 1x4)
+Gautam Gambhir
+77 (95b 8x4)
+Muthiah Muralidaran
+6-0-20-0
+Thisara Perera
+6-0-35-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,32,"8 runs
+IND: 165/3
+CRR: 5.15 • RRR: 6.11
+MS Dhoni
+23 (30b 2x4)
+Gautam Gambhir
+79 (97b 8x4)
+Thisara Perera
+7-0-43-0
+Muthiah Muralidaran
+6-0-20-0
+Sravan: ""Where's Poonam? Close your eyes, everyone.""
+Thanks Brydon. What a lovely climax ahead of us."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,33,"5 runs
+IND: 170/3
+CRR: 5.15 • RRR: 6.17
+Gautam Gambhir
+80 (99b 8x4)
+MS Dhoni
+27 (34b 2x4)
+Nuwan Kulasekara
+6-0-39-0
+Thisara Perera
+7-0-43-0
+Chamara: ""@ Sarvan, It is too early to Poonam... Wait dear... Lions still in game.!!"""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,34,"5 runs
+IND: 175/3
+CRR: 5.14 • RRR: 6.25
+MS Dhoni
+29 (37b 2x4)
+Gautam Gambhir
+83 (102b 8x4)
+Suraj Randiv
+5-0-25-0
+Nuwan Kulasekara
+6-0-39-0
+Mojo: ""Regarding Poonam comments: Doesnt deserve the attention she's getting. Its just a sordid gimmick for cheap publicity by a wannabe starlet."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,35,"8 runs
+IND: 183/3
+CRR: 5.22 • RRR: 6.13
+Gautam Gambhir
+88 (106b 9x4)
+MS Dhoni
+31 (39b 2x4)
+Nuwan Kulasekara
+7-0-46-0
+Suraj Randiv
+5-0-25-0
+Kashyap: ""It used to be the ""fat lady singing"" these days its the ""hot lady stripping"". The times we live in. ""
+Siva: ""Wow! Ravi Shastri can hear what batsmen are saying in the middle of the pitch among all the noise!"" Ha!"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,36,"8 runs
+IND: 191/3
+CRR: 5.30 • RRR: 6.00
+Gautam Gambhir
+89 (109b 9x4)
+MS Dhoni
+38 (42b 3x4)
+Suraj Randiv
+6-0-33-0
+Nuwan Kulasekara
+7-0-46-0
+Here we go. Lasitha to bowl.
+Prashant: ""For a change it's not a one-sided WC final. Great fight from India."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,37,"5 runs
+IND: 196/3
+CRR: 5.29 • RRR: 6.07
+Gautam Gambhir
+89 (110b 9x4)
+MS Dhoni
+43 (47b 3x4)
+Lasith Malinga
+6-0-22-2
+Suraj Randiv
+6-0-33-0
+VInod: ""Brilliant to see India's very Aussie-like fightback, sensible batting and MSD playing a captain's knock after a long time at this crucial juncture. Sensational!""
+Meanwhile, Dhoni is getting slowly ready. Not sure whether he has a back problem or something else. He drinks some water, spits some, has a chat, and a laugh, with Gambhir.
+Circe Magnifica: "" Don't be so sure: I woudn't put it beyond the reach of the famous Great Indian Collapsing Trick to make this appear as one-sided as a floor within a couple of overs. ""
+Umair: ""@Prashant: Fight? What India is doing at the moment is anythign but fight. They are just cool. Even SriLanka is not showing any fight ;). ""
+Dhoni is struggling in pain there Some back problem. He is down on the ground. Physio is out there. Now he gets up and gets ready."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,38,"8 runs
+IND: 204/3
+CRR: 5.36 • RRR: 5.91
+MS Dhoni
+50 (52b 4x4)
+Gautam Gambhir
+90 (111b 9x4)
+Muthiah Muralidaran
+7-0-28-0
+Lasith Malinga
+6-0-22-2
+Dhoni has a poor batting record in both World Cups so far. However, he has a great record against Sri Lanka. Over 50 in 46 games against Lanka and over 100 in the 15 games played in India."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,39,"6 runs
+IND: 210/3
+CRR: 5.38 • RRR: 5.90
+Gautam Gambhir
+93 (115b 9x4)
+MS Dhoni
+52 (54b 4x4)
+Lasith Malinga
+7-0-28-2
+Muthiah Muralidaran
+7-0-28-0"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,40,"11 runs
+IND: 221/3
+CRR: 5.52 • RRR: 5.40
+Gautam Gambhir
+96 (117b 9x4)
+MS Dhoni
+59 (58b 5x4)
+Muthiah Muralidaran
+8-0-39-0
+Lasith Malinga
+7-0-28-2
+Randiv wipes the ball with his towel. I remember Ranatunga used to always keep a short towel in his behind."
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,41,"2 runs
+IND: 223/3
+CRR: 5.43 • RRR: 5.77
+MS Dhoni
+60 (61b 5x4)
+Gautam Gambhir
+97 (120b 9x4)
+Suraj Randiv
+7-0-35-0
+Muthiah Muralidaran
+8-0-39-0
+Dushyant Garg: ""In India, Venkatesh Prasad used to keep one small towel tucked back under his back.""
+Zane sends this gem: ""A short towel in his behind? Explains the poor running."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,42,"4 runs • 1 wicket
+IND: 227/4
+CRR: 5.40 • RRR: 6.00
+Yuvraj Singh
+4 (4b 1x4)
+MS Dhoni
+60 (61b 5x4)
+Thisara Perera
+8-0-47-1
+Suraj Randiv
+7-0-35-0
+Ball is being changed again
+Roopak: ""Gambhir not getting his 100 doesn't take away anything from his innings. We still remember Tendulkar's 98 against Pakistan in 2003 WC as a classic. Contribution matters.. not the count!"""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,43,"5 runs
+IND: 232/4
+CRR: 5.39 • RRR: 6.14
+Yuvraj Singh
+5 (6b 1x4)
+MS Dhoni
+62 (65b 5x4)
+Suraj Randiv
+8-0-38-0
+Thisara Perera
+8-0-47-1
+Adarsh: ""@Roopak: it's not about getting the hundred but finishing the game. When he was there, SL had no chance. Now they have."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,44,"8 runs
+IND: 240/4
+CRR: 5.45 • RRR: 5.83
+MS Dhoni
+69 (70b 5x4 1x6)
+Yuvraj Singh
+6 (7b 1x4)
+Thisara Perera
+9-0-55-1
+Suraj Randiv
+8-0-38-0
+Mukesh: ""Loved the spirit, courage and maturity of Dhoni to come ahead of inform Yuvraj in pressure cooker situation and preserve Yuvi for the finish line."""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,45,"5 runs
+IND: 245/4
+CRR: 5.44 • RRR: 6.00
+Yuvraj Singh
+9 (11b 1x4)
+MS Dhoni
+71 (72b 5x4 1x6)
+Suraj Randiv
+9-0-43-0
+Thisara Perera
+9-0-55-1
+Shaeed: ""So Dar is still undefeated. He should be getting the Best Umpire of the WC2011 award.""
+Ravi: ""going for DRS against Aleem Dar proved to the useless thing of the tournament.. ""
+Rohit: ""Anyone up for a super over to spice things up ?"" Let's see whether Malinga has any fuel left in him.
+Srinivas: ""@Mukhesh - Its not just courage, its the strategy of a left and right combination at the center. 100 run partnership..thts the way to do it"""
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,46,"3 runs
+IND: 248/4
+CRR: 5.39 • RRR: 6.75
+Yuvraj Singh
+12 (17b 1x4)
+MS Dhoni
+71 (72b 5x4 1x6)
+Lasith Malinga
+8-0-31-2
+Suraj Randiv
+9-0-43-0
+Mager: ""Here comes the biggest threat.. Batting powerplay. Please don't collapse. For the last time..""
+Ram: ""Pink Floyd: 'Hanging on quiet desperation is the English way'. Very apt description of this match; for both teams."" Who will be comfortably numb at the end of it?"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,47,"11 runs
+IND: 259/4
+CRR: 5.51 • RRR: 5.33
+Yuvraj Singh
+18 (21b 2x4)
+MS Dhoni
+76 (74b 6x4 1x6)
+Nuwan Kulasekara
+8-0-57-0
+Lasith Malinga
+8-0-31-2
+ICC have just tweeted that Yuvraj Singh is the Player of the tournament! Congrats boss!"
+ODI_CWC_2011_final_inning2_commantary_full_cricinfo,ODI_CWC_2011_final_inning2_commantary_full_cricinfo.txt,1,over_summary,48,"11 runs
+IND: 270/4
+CRR: 5.62 • RRR: 2.50
+Yuvraj Singh
+20 (23b 2x4)
+MS Dhoni
+85 (78b 8x4 1x6)
+Lasith Malinga
+9-0-42-2
+Nuwan Kulasekara
+8-0-57-0
+Nitin: ""Thnx cricinfo...u have just messed up the suspense of Player of the tournament for the millions who r NOT on twitter!"" Ha! It was my pleasure!"

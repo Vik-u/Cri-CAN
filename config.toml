@@ -1,0 +1,46 @@
+[project]
+name = "Cri-CAN"
+description = "CWC 2011 final commentary dataset"
+
+[paths]
+raw_dir = "data/raw"
+structured_csv_dir = "data/structured/csv"
+structured_jsonl_dir = "data/structured/jsonl"
+structured_sqlite_dir = "data/structured/sqlite"
+legacy_csv_dir = "data/structured/legacy_csv"
+structured_report = "data/structured/report.md"
+agentic_report = "agentic/performance_report.md"
+
+[files]
+balls_csv = "data/structured/csv/balls.csv"
+meta_csv = "data/structured/csv/meta.csv"
+overs_jsonl = "data/structured/jsonl/overs.jsonl"
+narrative_jsonl = "data/structured/jsonl/narrative.jsonl"
+sqlite_db = "data/structured/sqlite/commentary.sqlite"
+balls_enriched_csv = "data/structured/csv/balls_enriched.csv"
+qa_report = "data/structured/csv/qa_report.md"
+sqlite_views_sql = "tools/sqlite_views.sql"
+
+[agentic]
+default_limit = 60
+output_csv = "agentic/csv/sample_output.txt"
+output_sqlite = "agentic/sqlite/sample_output.txt"
+output_jsonl = "agentic/jsonl/sample_output.txt"
+output_jsonl_v1 = "agentic/jsonl/sample_output_v1.txt"
+v0_label = "v0-deterministic"
+v1_label = "v1-agentic-llm"
+
+[llm]
+provider = "ollama"
+command = ""
+command_template = "ollama run {model}"
+model = "gpt-oss:20b"
+multimodal_model = "gemma3:27b"
+temperature = 0.7
+max_tokens = 220
+
+[prompts]
+jsonl_dir = "agentic/jsonl/prompts"
+
+[build]
+raw_glob = "*.txt"

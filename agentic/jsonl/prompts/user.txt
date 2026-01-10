@@ -1,0 +1,10 @@
+Bowler: {{bowler}}
+Batsman: {{batsman}}
+Event: {{event_type}}
+Result: {{result_raw}}
+Commentary hint: {{commentary}}
+Over summary: {{over_summary}}
+Recent overs: {{recent_overs}}
+Recent lines: {{context_window}}
+
+Write a short, human-like commentary line.

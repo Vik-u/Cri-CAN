@@ -1,0 +1,5 @@
+# v1-agentic-llm
+# llm: uses external command when configured; falls back to style templates
+# match_id: CWC_2011_final_ALL
+Khan's ball slices the air, but Tharanga's bat just misses the sweet spot - a tidy dot, no run to the scoreboard.
+Khan's ball lands on a good length outside off, and Tharanga gives a little poke from the crease, but the bat just brushes the air-no run, a tidy dot.
