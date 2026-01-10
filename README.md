@@ -19,12 +19,17 @@ Cricket Commentary Agentic Network (CWC 2011 Final). This repo turns Cricinfo-st
 - `Cri-CAN/tools`: build + QA tooling.
 - `Cri-CAN/agentic`: v0/v1 commentary pipelines and reports.
 - `Cri-CAN/agentic/commentary_cli.py`: chunked commentary CLI by over/bowler/team/event/style.
+- `Cri-CAN/agentic/commentary_core.py`: shared generator (deterministic, template, LLM).
+- `Cri-CAN/agentic/over_summary.py`: over-level narrative builder.
+- `Cri-CAN/agentic/style_templates.py`: per-style templates for ball and over summaries.
+- `Cri-CAN/streamlit_app.py`: Streamlit UI for interactive commentary generation.
 - `Cri-CAN/config.toml`: global configuration.
 - `Cri-CAN/Makefile`: reproducible build/run targets.
 
 ## Prereqs
 - Python 3.11+ (stdlib only).
 - Optional: Ollama for local LLM generation.
+- Optional: Streamlit (installed in local venv at `Cri-CAN/.venv`).
 
 ## Config
 - Default config: `Cri-CAN/config.toml`
@@ -92,6 +97,18 @@ python3 Cri-CAN/agentic/commentary_cli.py --innings 2 --over 10 --style energeti
 python3 Cri-CAN/agentic/commentary_cli.py --team IND --event boundary --style funny
 python3 Cri-CAN/agentic/commentary_cli.py --bowler Malinga --over 20 --style serious
 ```
+
+Modes:
+- `--mode deterministic` (exact, per-ball)
+- `--mode template` (template per-ball)
+- `--mode llm` (LLM per-ball)
+- `--granularity over` (smooth over summary)
+
+## Streamlit UI
+```bash
+Cri-CAN/.venv/bin/python -m streamlit run Cri-CAN/streamlit_app.py --server.headless true
+```
+Then open `http://localhost:8501` in your browser.
 
 ## SQLite query layer
 - Build views:

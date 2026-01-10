@@ -1,7 +1,7 @@
 PY ?= python3
 CONFIG ?= config.toml
 
-.PHONY: build structured legacy derive qa sqlite-views sqlite-query commentary-cli agentic-csv agentic-sqlite agentic-jsonl agentic-jsonl-v1 agentic-all compare rebuild
+.PHONY: build structured legacy derive qa sqlite-views sqlite-query commentary-cli streamlit agentic-csv agentic-sqlite agentic-jsonl agentic-jsonl-v1 agentic-all compare rebuild
 
 build: structured
 
@@ -24,6 +24,9 @@ sqlite-query:
 
 commentary-cli:
 	$(PY) agentic/commentary_cli.py --config $(CONFIG) --innings 2 --over 10 --style broadcast
+
+streamlit:
+	./.venv/bin/python -m streamlit run streamlit_app.py --server.headless true
 
 agentic-csv:
 	$(PY) agentic/csv/run_agentic_csv.py --config $(CONFIG)

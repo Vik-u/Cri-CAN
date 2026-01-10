@@ -59,6 +59,13 @@ Output is labeled `v0-deterministic` and is derived directly from parsed comment
 - CLI: `Cri-CAN/agentic/commentary_cli.py`
 - Filters by over, bowler, batsman, team, innings, and event type.
 - Style controls: broadcast, funny, serious, methodical, energetic, roasting.
+- Modes: deterministic, template, llm.
+- Granularity: per-ball or per-over (smooth summary).
+
+### Streamlit UI
+- App: `Cri-CAN/streamlit_app.py`
+- Run: `Cri-CAN/.venv/bin/python -m streamlit run Cri-CAN/streamlit_app.py --server.headless true`
+- Open: `http://localhost:8501`
 
 Features:
 - Conversational tone (broadcast style)

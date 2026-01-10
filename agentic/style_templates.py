@@ -166,10 +166,123 @@ TEMPLATES = {
     },
 }
 
+OVER_TEMPLATES = {
+    "broadcast": {
+        "open": [
+            "Over {over_num}: {runs} runs{wicket_phrase}.",
+            "End of over {over_num} - {runs} off it{wicket_phrase}.",
+            "{runs} off over {over_num}{wicket_phrase}.",
+        ],
+        "highlight": [
+            "Boundaries from {boundary_batsmen} kept it lively.",
+            "The highlight: {boundary_batsmen} find the rope.",
+            "Key moments from {boundary_batsmen} add the spark.",
+        ],
+        "close": [
+            "Otherwise, mostly singles and dots.",
+            "Apart from that, it stays controlled.",
+            "A measured over with steady rotation.",
+        ],
+    },
+    "funny": {
+        "open": [
+            "Over {over_num}: {runs} runs{wicket_phrase}. Not bad for six deliveries.",
+            "{runs} off over {over_num}{wicket_phrase}.",
+            "Over {over_num} goes for {runs}{wicket_phrase}.",
+        ],
+        "highlight": [
+            "Boundaries from {boundary_batsmen} did the heavy lifting.",
+            "{boundary_batsmen} did the loud work with the big hits.",
+            "The rope got a workout thanks to {boundary_batsmen}.",
+        ],
+        "close": [
+            "Otherwise, it's a jog-and-nod kind of over.",
+            "The rest is just singles and polite applause.",
+            "Not many fireworks outside the boundaries.",
+        ],
+    },
+    "serious": {
+        "open": [
+            "Over {over_num}: {runs} runs{wicket_phrase}.",
+            "{runs} from that over{wicket_phrase}.",
+            "Over {over_num} yields {runs}{wicket_phrase}.",
+        ],
+        "highlight": [
+            "Boundaries from {boundary_batsmen} were decisive.",
+            "{boundary_batsmen} provide the key scoring strokes.",
+            "The scoring surge comes via {boundary_batsmen}.",
+        ],
+        "close": [
+            "Otherwise, steady accumulation.",
+            "The remainder is controlled rotation.",
+            "Minimal risk outside the scoring shots.",
+        ],
+    },
+    "methodical": {
+        "open": [
+            "Over {over_num} summary: {runs} runs{wicket_phrase}.",
+            "Over {over_num} totals {runs}{wicket_phrase}.",
+            "Over {over_num}: {runs} recorded{wicket_phrase}.",
+        ],
+        "highlight": [
+            "Boundary events: {boundary_batsmen}.",
+            "Primary scoring via {boundary_batsmen}.",
+            "Notable boundaries from {boundary_batsmen}.",
+        ],
+        "close": [
+            "Other deliveries yield low scoring.",
+            "Remaining balls produce singles or dots.",
+            "Non-boundary deliveries are contained.",
+        ],
+    },
+    "energetic": {
+        "open": [
+            "Over {over_num}: {runs} runs{wicket_phrase}!",
+            "{runs} off over {over_num}{wicket_phrase} - pace stays high!",
+            "Over {over_num} goes for {runs}{wicket_phrase}!",
+        ],
+        "highlight": [
+            "{boundary_batsmen} bring the fireworks with the boundaries.",
+            "Boundaries from {boundary_batsmen} light it up.",
+            "{boundary_batsmen} put the crowd on its feet.",
+        ],
+        "close": [
+            "The rest is hustle and pressure.",
+            "Still plenty of energy in that over.",
+            "Not a dull ball in that spell.",
+        ],
+    },
+    "roasting": {
+        "open": [
+            "Over {over_num}: {runs} runs{wicket_phrase}. Could have been tighter.",
+            "{runs} off over {over_num}{wicket_phrase}. Not exactly stingy.",
+            "Over {over_num} goes for {runs}{wicket_phrase}.",
+        ],
+        "highlight": [
+            "{boundary_batsmen} made sure the bowler paid.",
+            "Boundaries from {boundary_batsmen} did the damage.",
+            "{boundary_batsmen} cashed in on the mistakes.",
+        ],
+        "close": [
+            "Other balls are just damage control.",
+            "The rest is singles and a bit of survival.",
+            "Not a great over outside the big shots.",
+        ],
+    },
+}
+
 
 def pick_template(style, event_type, seed_key):
     style_templates = TEMPLATES.get(style, TEMPLATES["broadcast"])
     options = style_templates.get(event_type, style_templates["run"])
+    h = hashlib.md5(seed_key.encode("utf-8")).hexdigest()
+    idx = int(h, 16) % len(options)
+    return options[idx]
+
+
+def pick_over_template(style, key, seed_key):
+    style_templates = OVER_TEMPLATES.get(style, OVER_TEMPLATES["broadcast"])
+    options = style_templates.get(key, style_templates["open"])
     h = hashlib.md5(seed_key.encode("utf-8")).hexdigest()
     idx = int(h, 16) % len(options)
     return options[idx]
@@ -186,3 +299,31 @@ def render_style(style, event_type, bowler, batsman, runs, seed_key):
         batsman_last=batsman_last,
         runs=runs,
     )
+
+
+def render_over(style, summary, seed_key):
+    boundary_batsmen = summary.get("boundary_batsmen") or "the batters"
+    wicket_phrase = summary.get("wicket_phrase") or ""
+    over_num = summary.get("over_num")
+    runs = summary.get("runs")
+
+    open_line = pick_over_template(style, "open", seed_key).format(
+        over_num=over_num,
+        runs=runs,
+        wicket_phrase=wicket_phrase,
+    )
+
+    lines = [open_line]
+
+    if summary.get("boundary_batsmen_list"):
+        highlight = pick_over_template(style, "highlight", seed_key + "|h").format(
+            boundary_batsmen=boundary_batsmen
+        )
+        lines.append(highlight)
+
+    close_line = pick_over_template(style, "close", seed_key + "|c").format(
+        boundary_batsmen=boundary_batsmen
+    )
+    lines.append(close_line)
+
+    return " ".join(line.strip() for line in lines if line.strip())
