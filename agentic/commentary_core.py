@@ -6,6 +6,7 @@ from pathlib import Path
 
 from agentic.agents import FactCheckAgent, PlannerAgent, StyleAgent
 from agentic.llm_adapter import generate_with_llm
+from agentic.style_guide import get_style_guidance
 from agentic.over_summary import build_summary, summarize_over
 from agentic.style_templates import render_style
 
@@ -158,6 +159,7 @@ def render_template_line(row, over_summaries, config, style, use_llm, model, pla
         event_style = panel_style_for_event(plan, row)
 
     if use_llm and config:
+        style_guidance = get_style_guidance(event_style)
         prompts_dir = Path(config["_root"]) / config.get("prompts", {}).get("jsonl_dir", "agentic/jsonl/prompts")
         system_text = (prompts_dir / "system.txt").read_text(encoding="utf-8")
         user_template = (prompts_dir / "user.txt").read_text(encoding="utf-8")
@@ -165,6 +167,7 @@ def render_template_line(row, over_summaries, config, style, use_llm, model, pla
         over_summary = over_summaries.get(key, "")
         values = {
             "style": event_style,
+            "style_guidance": style_guidance,
             "bowler": row.get("bowler", ""),
             "batsman": row.get("batsman", ""),
             "event_type": plan["event_type"],
@@ -201,18 +204,22 @@ def is_valid_over_llm(text, summary):
     if runs is not None and not re.search(rf"\b{runs}\b", text):
         return False
     if summary.get("wicket_count", 0) == 0:
-        if any(word in lower for word in ["wicket", "dismiss", "out", "gone", "lbw", "bowled", "caught"]):
+        if re.search(r"\b(dismiss|dismissed|out|gone|lbw|bowled|caught|stumped)\b", lower):
             return False
+        if "run out" in lower:
+            return False
+    mentions_four = _mentions_four(lower)
+    mentions_six = _mentions_six(lower)
     if summary.get("boundary_count", 0) == 0:
-        if any(word in lower for word in ["boundary", "four", "six", "rope", "fence", "stands"]):
+        if mentions_four or mentions_six or any(word in lower for word in ["boundary", "rope", "fence", "stands"]):
             return False
-    if summary.get("has_six") is False and "six" in lower:
+    if summary.get("has_six") is False and mentions_six:
         return False
-    if summary.get("has_six") is True and "six" not in lower:
+    if summary.get("has_six") is True and not mentions_six:
         return False
-    if summary.get("has_four") is False and "four" in lower:
+    if summary.get("has_four") is False and mentions_four:
         return False
-    if summary.get("has_four") is True and "four" not in lower:
+    if summary.get("has_four") is True and not mentions_four:
         return False
     return True
 
@@ -220,18 +227,22 @@ def is_valid_over_llm(text, summary):
 def is_valid_over_conversation(text, summary, allowed_names=None):
     lower = text.lower()
     if summary.get("wicket_count", 0) == 0:
-        if any(word in lower for word in ["wicket", "dismiss", "out", "gone", "lbw", "bowled", "caught"]):
+        if re.search(r"\b(dismiss|dismissed|out|gone|lbw|bowled|caught|stumped)\b", lower):
             return False
+        if "run out" in lower:
+            return False
+    mentions_four = _mentions_four(lower)
+    mentions_six = _mentions_six(lower)
     if summary.get("boundary_count", 0) == 0:
-        if any(word in lower for word in ["boundary", "four", "six", "rope", "fence", "stands"]):
+        if mentions_four or mentions_six or any(word in lower for word in ["boundary", "rope", "fence", "stands"]):
             return False
-    if summary.get("has_six") is False and "six" in lower:
+    if summary.get("has_six") is False and mentions_six:
         return False
-    if summary.get("has_four") is False and "four" in lower:
+    if summary.get("has_four") is False and mentions_four:
         return False
-    if summary.get("has_six") is True and "six" not in lower:
+    if summary.get("has_six") is True and not mentions_six:
         return False
-    if summary.get("has_four") is True and not any(word in lower for word in ["four", "boundary", "rope"]):
+    if summary.get("has_four") is True and not mentions_four:
         return False
     if allowed_names:
         if not validate_names_in_text(text, allowed_names):
@@ -247,6 +258,28 @@ def is_valid_over_script(text, summary, allowed_names=None):
     if "Previous over:" not in text:
         return False
     return is_valid_over_conversation(text, summary, allowed_names=allowed_names)
+
+
+def _mentions_four(lower):
+    if re.search(r"\bfour\b", lower):
+        if re.search(r"\bfour (balls|deliveries)\b", lower):
+            return False
+        return True
+    if re.search(r"\bboundary\b", lower):
+        return True
+    if any(word in lower for word in ["rope", "fence", "stands"]):
+        return True
+    return False
+
+
+def _mentions_six(lower):
+    if re.search(r"\bsix\b", lower):
+        if re.search(r"\bsix (balls|deliveries)\b", lower):
+            return False
+        return True
+    if "sixer" in lower:
+        return True
+    return False
 
 
 def generate_template_lines(rows, over_summaries, config, filters, style, use_llm=False, model=None):
@@ -405,6 +438,7 @@ def generate_over_conversation(rows, style, config=None, use_llm=False, model=No
     allowed_names = build_allowed_names(events)
 
     if use_llm and config:
+        style_guidance = get_style_guidance(style)
         prompts_dir = Path(config["_root"]) / config.get("prompts", {}).get("jsonl_dir", "agentic/jsonl/prompts")
         system_text = (prompts_dir / "over_conversation_system.txt").read_text(encoding="utf-8")
         user_template = (prompts_dir / "over_conversation_user.txt").read_text(encoding="utf-8")
@@ -416,6 +450,7 @@ def generate_over_conversation(rows, style, config=None, use_llm=False, model=No
             event_lines.append(line)
         values = {
             "style": style,
+            "style_guidance": style_guidance,
             "over_num": summary.get("over_num"),
             "runs": summary.get("runs"),
             "wickets": summary.get("wicket_count"),
@@ -617,6 +652,58 @@ def validate_names_in_text(text, allowed_names):
         "The",
         "A",
         "An",
+        "No",
+        "Not",
+        "Yes",
+        "Another",
+        "Minimal",
+        "Measured",
+        "Steady",
+        "Tidy",
+        "Loose",
+        "Solid",
+        "Precise",
+        "Quiet",
+        "Soft",
+        "Sharp",
+        "Neat",
+        "Smart",
+        "Brisk",
+        "Crisp",
+        "Controlled",
+        "Short",
+        "Good",
+        "Big",
+        "Clean",
+        "Easy",
+        "Quick",
+        "Cautious",
+        "Calm",
+        "Tight",
+        "Full",
+        "Driven",
+        "Square",
+        "Cover",
+        "Point",
+        "Deep",
+        "Wide",
+        "Outside",
+        "Inside",
+        "Back",
+        "Front",
+        "Middle",
+        "Leg",
+        "Off",
+        "Edge",
+        "Crowd",
+        "Scoreboard",
+        "Score",
+        "Fielders",
+        "Field",
+        "Bowler",
+        "Batter",
+        "Batsman",
+        "Batters",
         "That",
         "This",
         "He",
@@ -626,6 +713,16 @@ def validate_names_in_text(text, allowed_names):
         "His",
         "Her",
         "Their",
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten",
         "Wicket",
         "Boundary",
         "FOUR",
@@ -633,12 +730,16 @@ def validate_names_in_text(text, allowed_names):
         "Runs",
         "Run",
     }
-    tokens = re.findall(r"[A-Z][a-zA-Z]+", text)
-    for token in tokens:
-        if token in stopwords:
-            continue
-        if token not in allowed_names:
-            return False
+    sentences = re.split(r"(?<=[.!?])\\s+", text)
+    for sentence in sentences:
+        tokens = re.findall(r"[A-Z][a-zA-Z]+", sentence)
+        for idx, token in enumerate(tokens):
+            if idx == 0:
+                continue
+            if token in stopwords:
+                continue
+            if token not in allowed_names:
+                return False
     return True
 
 
@@ -679,6 +780,7 @@ def generate_over_script(rows, all_rows, style, config=None, use_llm=False, mode
     prev_summary = build_previous_over_summary(rows, all_rows, style)
 
     if use_llm and config:
+        style_guidance = get_style_guidance(style)
         prompts_dir = Path(config["_root"]) / config.get("prompts", {}).get("jsonl_dir", "agentic/jsonl/prompts")
         system_text = (prompts_dir / "over_script_system.txt").read_text(encoding="utf-8")
         user_template = (prompts_dir / "over_script_user.txt").read_text(encoding="utf-8")
@@ -690,6 +792,7 @@ def generate_over_script(rows, all_rows, style, config=None, use_llm=False, mode
             event_lines.append(line)
         values = {
             "style": style,
+            "style_guidance": style_guidance,
             "over_num": summary.get("over_num"),
             "runs": summary.get("runs"),
             "wickets": summary.get("wicket_count"),
@@ -763,11 +866,13 @@ def generate_over_lines(rows, filters, style, config=None, use_llm=False, model=
                 summary_style = "methodical"
 
         if use_llm and config:
+            style_guidance = get_style_guidance(summary_style)
             prompts_dir = Path(config["_root"]) / config.get("prompts", {}).get("jsonl_dir", "agentic/jsonl/prompts")
             system_text = (prompts_dir / "over_system.txt").read_text(encoding="utf-8")
             user_template = (prompts_dir / "over_user.txt").read_text(encoding="utf-8")
             values = {
                 "style": summary_style,
+                "style_guidance": style_guidance,
                 "over_num": summary.get("over_num"),
                 "runs": summary.get("runs"),
                 "wickets": summary.get("wicket_count"),

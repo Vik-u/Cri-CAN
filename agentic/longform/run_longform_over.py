@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import argparse
-import csv
 import re
 import sys
 import textwrap
@@ -19,7 +18,9 @@ from agentic.commentary_core import (
     load_overs,
     validate_names_in_text,
 )
+from agentic.kg_context import build_pressure_hint, format_ball_state_lines, load_ball_state_rows
 from agentic.llm_adapter import generate_with_llm
+from agentic.style_guide import get_style_guidance
 
 
 def extract_snippet(text, limit=140):
@@ -34,45 +35,6 @@ def extract_snippet(text, limit=140):
         trimmed = first[:limit].rsplit(" ", 1)[0].rstrip(".")
         return trimmed + "..."
     return first
-
-
-def load_ball_state(path, match_id, innings, over_ordinal):
-    target_over = over_ordinal - 1
-    rows = []
-    with path.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle)
-        for row in reader:
-            if match_id and row.get("match_id") != match_id:
-                continue
-            if int(row.get("innings_index") or 0) != innings:
-                continue
-            if int(row.get("over") or 0) != target_over:
-                continue
-            rows.append(row)
-    rows.sort(key=lambda r: int(r.get("ball_in_over") or 0))
-    return rows
-
-
-def build_ball_state_lines(state_rows):
-    lines = []
-    for row in state_rows:
-        score = f"{row.get('innings_runs')}/{row.get('innings_wickets')}"
-        balls = row.get("balls_remaining")
-        rrr = row.get("rrr")
-        phase = row.get("phase")
-        context_bits = []
-        if score.strip("/"):
-            context_bits.append(f"score {score}")
-        if balls:
-            context_bits.append(f"balls left {balls}")
-        if rrr and rrr != "nan":
-            context_bits.append(f"rrr {rrr}")
-        if phase:
-            context_bits.append(f"phase {phase}")
-        context = ", ".join(context_bits)
-        label = row.get("ball_number") or f"{row.get('over')}.{row.get('ball_in_over')}"
-        lines.append(f"{label}: {context}")
-    return "\n".join(line for line in lines if line.strip())
 
 
 def build_event_lines(events, state_rows):
@@ -136,12 +98,15 @@ def generate_longform_over(rows, all_rows, state_rows, style, config, use_llm=Tr
     batsmen = sorted({e.get("batsman") for e in events if e.get("batsman")})
     batsmen_text = ", ".join(batsmen[:3])
 
+    style_guidance = get_style_guidance(style)
+    pressure_hint = build_pressure_hint(state_rows)
     if use_llm and config:
         prompts_dir = Path(__file__).resolve().parent / "prompts"
         system_text = (prompts_dir / "longform_system.txt").read_text(encoding="utf-8")
         user_template = (prompts_dir / "longform_user.txt").read_text(encoding="utf-8")
         values = {
             "style": style,
+            "style_guidance": style_guidance,
             "over_num": summary.get("over_num"),
             "runs": summary.get("runs"),
             "wickets": summary.get("wicket_count"),
@@ -151,7 +116,8 @@ def generate_longform_over(rows, all_rows, state_rows, style, config, use_llm=Tr
             "allowed_names": ", ".join(sorted(allowed_names)),
             "previous_over": prev_summary,
             "events": build_event_lines(events, state_rows),
-            "ball_state": build_ball_state_lines(state_rows),
+            "ball_state": format_ball_state_lines(state_rows),
+            "pressure_hint": pressure_hint,
         }
         user_text = user_template
         for key, value in values.items():
@@ -172,7 +138,7 @@ def main():
     parser.add_argument("--style", default="broadcast", help="Style")
     parser.add_argument("--model", default=None, help="Override LLM model")
     parser.add_argument("--no-llm", action="store_true", help="Disable LLM and use fallback")
-    parser.add_argument("--output-dir", default="agentic/longform/outputs", help="Output directory")
+    parser.add_argument("--output-dir", default="agentic/outputs/longform", help="Output directory")
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -193,7 +159,7 @@ def main():
     if not kg_state_path.exists():
         kg_state_path = get_path(config, "balls_enriched_csv", section="files")
 
-    state_rows = load_ball_state(kg_state_path, match_id, args.innings, args.over)
+    state_rows = load_ball_state_rows(kg_state_path, match_id, args.innings, args.over)
 
     output = generate_longform_over(
         over_rows,

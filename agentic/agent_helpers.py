@@ -18,6 +18,7 @@ def extract_ball_lines(text):
         clean = re.sub(r"Ball\s*\d+\s*[:\-]\s*", "", clean, flags=re.IGNORECASE)
         clean = re.sub(r"^[-*\d.\s]*\d+\s*[:\-]\s*", "", clean)
         if clean:
+            clean = clean.lstrip("*").strip()
             lines.append(clean)
     if len(lines) < 6 and "|" in text:
         parts = [part.strip() for part in text.split("|") if part.strip()]

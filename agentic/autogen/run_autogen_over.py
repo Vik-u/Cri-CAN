@@ -18,6 +18,8 @@ from agentic.commentary_core import (
     load_overs,
 )
 from agentic.agent_helpers import extract_ball_lines, format_ball_lines_with_llm, force_ball_lines
+from agentic.kg_context import build_pressure_hint, format_ball_state_lines, load_ball_state_rows
+from agentic.style_guide import get_style_guidance
 import autogen
 import re
 
@@ -33,11 +35,14 @@ def load_over_rows(rows, match_id, innings, over_ordinal):
     ]
 
 
-def build_context(rows, all_rows, style):
+def build_context(rows, all_rows, style, state_rows):
     summary = build_summary(rows)
     events = build_over_events(rows)
     prev_summary = build_previous_over_summary(rows, all_rows, style)
     allowed_names = build_allowed_names(events)
+    style_guidance = get_style_guidance(style)
+    ball_state = format_ball_state_lines(state_rows)
+    pressure_hint = build_pressure_hint(state_rows)
     event_lines = []
     for event in events:
         line = f"{event['batsman']} - {event['result_raw']} [{event['event_token']}]"
@@ -50,6 +55,9 @@ def build_context(rows, all_rows, style):
         "events": event_lines,
         "previous_over": prev_summary,
         "allowed_names": sorted(allowed_names),
+        "style_guidance": style_guidance,
+        "ball_state": ball_state,
+        "pressure_hint": pressure_hint,
     }
 
 
@@ -73,12 +81,17 @@ def normalize_reply(reply):
     return reply or ""
 
 
-def run_autogen(rows, all_rows, match_id, innings, over_ordinal, style, model, base_url):
+def run_autogen(rows, all_rows, match_id, innings, over_ordinal, style, model, base_url, config):
     over_rows = load_over_rows(rows, match_id, innings, over_ordinal)
     if not over_rows:
         return None, "No rows matched the requested over."
 
-    context = build_context(over_rows, all_rows, style)
+    kg_state_path = get_path(config, "kg_ball_state_csv", section="files")
+    if not kg_state_path.exists():
+        kg_state_path = get_path(config, "balls_enriched_csv", section="files")
+    state_rows = load_ball_state_rows(kg_state_path, match_id, innings, over_ordinal)
+
+    context = build_context(over_rows, all_rows, style, state_rows)
     summary = context["summary"]
     allowed_names = context["allowed_names"]
 
@@ -123,8 +136,12 @@ def run_autogen(rows, all_rows, match_id, innings, over_ordinal, style, model, b
         "Do NOT include previous over summary or end-of-over summary.\n"
         "Label each line as: Ball 1: ..., Ball 2: ..., etc.\n"
         "Use at least one phrase from each ball's commentary snippet; avoid generic template lines.\n"
+        "Each line should be 18-30 words and feel like live commentary.\n"
         f"Allowed player names: {', '.join(allowed_names)}\n"
         f"Over: {summary.get('over_num')} | Runs: {summary.get('runs')} | Wickets: {summary.get('wicket_count')}\n"
+        f"Style: {style}. Guidance: {context['style_guidance']}\n"
+        f"Pressure hint: {context['pressure_hint']}\n"
+        f"Score context by ball:\n{context['ball_state']}\n"
         f"Plan:\n{plan}\n"
     )
     draft = normalize_reply(writer.generate_reply(messages=[{"role": "user", "content": write_prompt}]))
@@ -132,6 +149,7 @@ def run_autogen(rows, all_rows, match_id, innings, over_ordinal, style, model, b
     critic_prompt = (
         "Check the draft for incorrect names, invented details, or generic filler. If any issues, rewrite the six lines.\n"
         f"Allowed names: {', '.join(allowed_names)}\n"
+        f"Style: {style}. Guidance: {context['style_guidance']}\n"
         f"Draft:\n{draft}\n"
         "Keep the Ball 1..Ball 6 labels."
     )
@@ -187,10 +205,11 @@ def main():
         args.style,
         args.model,
         args.base_url,
+        config,
     )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_dir = Path(__file__).resolve().parent / "outputs" / f"run_{timestamp}"
+    out_dir = ROOT_DIR / "agentic" / "outputs" / "autogen" / f"run_{timestamp}"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"autogen_innings{args.innings}_over{args.over}.md"
 

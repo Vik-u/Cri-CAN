@@ -147,7 +147,7 @@ def main():
     parser.add_argument("--model", default=None, help="Override LLM model")
     parser.add_argument("--voice", default=None, help="Optional say voice")
     parser.add_argument("--rate", type=int, default=175, help="Optional say rate (wpm)")
-    parser.add_argument("--output-dir", default="agentic/demo/llm_audio", help="Output directory")
+    parser.add_argument("--output-dir", default="agentic/outputs/demo/llm_audio", help="Output directory")
     args = parser.parse_args()
 
     config = load_config(args.config)

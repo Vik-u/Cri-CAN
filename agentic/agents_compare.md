@@ -1,7 +1,7 @@
 # CrewAI vs AutoGen (Innings 2, Over 4)
 
-- CrewAI file: agentic/crewai/outputs/run_20260110_185121/crewai_innings2_over4.md
-- AutoGen file: agentic/autogen/outputs/run_20260110_184437/autogen_innings2_over4.md
+- CrewAI file: agentic/outputs/crewai/run_20260110_185121/crewai_innings2_over4.md
+- AutoGen file: agentic/outputs/autogen/run_20260110_184437/autogen_innings2_over4.md
 
 ## CrewAI
 Previous over: 5 off over 3. A measured over with steady rotation. Over 4 begins. Full length ball on off stump, he quietly pushes to mid off for one. They

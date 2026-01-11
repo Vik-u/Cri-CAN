@@ -1,4 +1,5 @@
 Style: {{style}}
+Style guidance: {{style_guidance}}
 Over number: {{over_num}}
 Runs in over: {{runs}}
 Wickets in over: {{wickets}}
@@ -7,6 +8,7 @@ Bowler: {{bowler}}
 Batsmen: {{batsmen}}
 Allowed names: {{allowed_names}}
 Previous over summary: {{previous_over}}
+Pressure hint: {{pressure_hint}}
 
 Events (ball order):
 {{events}}

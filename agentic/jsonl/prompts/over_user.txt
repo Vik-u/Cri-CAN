@@ -1,4 +1,5 @@
 Style: {{style}}
+Style guidance: {{style_guidance}}
 Over: {{over_num}}
 Runs: {{runs}}
 Wickets: {{wickets}}

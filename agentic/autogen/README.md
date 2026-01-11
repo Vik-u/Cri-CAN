@@ -1,6 +1,7 @@
 # AutoGen Commentary Pipeline
 
 This folder uses AutoGen agents (planner → writer → critic) to generate a full over commentary.
+KG ball_state context and style guidance are injected into the prompts to reduce hallucinations and improve tone.
 
 ## Setup
 - Use the shared venv: `Cri-CAN/.venv-agents`
@@ -11,4 +12,4 @@ This folder uses AutoGen agents (planner → writer → critic) to generate a fu
 Cri-CAN/.venv-agents/bin/python Cri-CAN/agentic/autogen/run_autogen_over.py --innings 2 --over 4 --style broadcast
 ```
 
-Output is written to `Cri-CAN/agentic/autogen/outputs/run_YYYYMMDD_HHMMSS/`.
+Output is written to `Cri-CAN/agentic/outputs/autogen/run_YYYYMMDD_HHMMSS/`.

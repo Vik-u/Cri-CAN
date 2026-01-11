@@ -10,3 +10,4 @@ Rules:
 - Use only the allowed player names.
 - Do not invent any new facts or outcomes.
 - Target length: 180-240 words.
+- If a pressure hint is provided, weave it in once naturally.

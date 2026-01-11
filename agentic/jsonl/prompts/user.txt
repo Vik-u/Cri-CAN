@@ -1,4 +1,5 @@
 Style: {{style}}
+Style guidance: {{style_guidance}}
 Bowler: {{bowler}}
 Batsman: {{batsman}}
 Event: {{event_type}}

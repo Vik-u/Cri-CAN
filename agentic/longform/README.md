@@ -19,7 +19,7 @@ python3 Cri-CAN/agentic/longform/run_longform_over.py --no-llm --innings 2 --ove
 ```
 
 Outputs:
-- `Cri-CAN/agentic/longform/outputs/run_YYYYMMDD_HHMMSS/longform_inningsX_overY.md`
+- `Cri-CAN/agentic/outputs/longform/run_YYYYMMDD_HHMMSS/longform_inningsX_overY.md`
 
 ## Inputs
 - `data/structured/jsonl/overs.jsonl`

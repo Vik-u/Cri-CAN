@@ -13,6 +13,7 @@ sys.path.append(str(AGENTIC_DIR))
 from config import get_path, load_config
 from agentic.agents import FactCheckAgent, PlannerAgent, StyleAgent
 from agentic.llm_adapter import generate_with_llm
+from agentic.style_guide import get_style_guidance
 from agentic.style_templates import render_style
 
 def load_overs(path):
@@ -88,8 +89,10 @@ def select_rows(rows, match_id=None, start=None, end=None, limit=None):
 
 
 def build_prompt(system_text, user_template, row, plan, style, context_window, recent_overs, current_over_summary):
+    style_guidance = get_style_guidance(style)
     values = {
         "style": style,
+        "style_guidance": style_guidance,
         "ball_number": row.get("ball_number", ""),
         "bowler": row.get("bowler", ""),
         "batsman": row.get("batsman", ""),
@@ -154,7 +157,7 @@ def main():
         bowler=row.get("bowler", ""),
         batsman=row.get("batsman", ""),
         runs=int(row.get("token_runs") or 0),
-        seed_key=f\"{row.get('match_id')}|{row.get('innings_index')}|{row.get('ball_number')}|{style}\",
+        seed_key=f"{row.get('match_id')}|{row.get('innings_index')}|{row.get('ball_number')}|{style}",
     ))
     fact_agent = FactCheckAgent()
 

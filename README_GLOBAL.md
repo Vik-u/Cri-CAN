@@ -1,6 +1,36 @@
 # Cri-CAN End-to-End Guide
 
-This document captures the full flow from raw files to structured data, knowledge graph, and agentic commentary.
+This document captures the full flow from raw files to structured data, knowledge graph, and agentic commentary, with how the agents interact and where outputs land.
+
+## System flow overview
+```mermaid
+flowchart TD
+  A[Raw commentary text] --> B[build_structured.py]
+  B --> C1[CSV: balls/meta]
+  B --> C2[JSONL: overs]
+  B --> C3[SQLite]
+  C1 --> D[derive_stats.py]
+  D --> E[balls_enriched.csv]
+  E --> F[build_kg.py]
+  F --> G[KG: nodes/edges/ball_state]
+  C2 --> H[Agentic generators]
+  G --> H
+  H --> I[Commentary outputs]
+  I --> J[Audio demo via macOS say]
+```
+
+## Agent network + KG interaction
+The core agentic pipeline is a sequential multi-agent flow: planner -> writer -> critic -> formatter. The KG adds per-ball score context and a pressure hint, which are injected into the writer and critic prompts.
+
+```mermaid
+flowchart LR
+  KG[KG ball_state + pressure hint] --> Ctx[Context builder]
+  Ctx --> P[Planner Agent]
+  P --> W[Writer Agent]
+  W --> X[Critic Agent]
+  X --> V[Formatter + Validation]
+  V --> Out[Over commentary]
+```
 
 ## 1) Raw data intake
 - Location: `Cri-CAN/data/raw`
@@ -76,7 +106,7 @@ Output is labeled `v0-deterministic` and is derived directly from parsed comment
 ### Long-form over commentary
 - `Cri-CAN/agentic/longform/run_longform_over.py`
 - Uses KG-derived `ball_state.csv` when present.
-- Output: `Cri-CAN/agentic/longform/outputs/run_YYYYMMDD_HHMMSS/longform_inningsX_overY.md`
+- Output: `Cri-CAN/agentic/outputs/longform/run_YYYYMMDD_HHMMSS/longform_inningsX_overY.md`
 
 ## 6b) LLM agent frameworks (CrewAI / AutoGen)
 Two separate folders are provided for framework comparison:
@@ -98,6 +128,10 @@ AutoGen run:
 ```bash
 Cri-CAN/.venv-agents/bin/python Cri-CAN/agentic/autogen/run_autogen_over.py --innings 2 --over 4 --style broadcast
 ```
+
+Outputs:
+- `Cri-CAN/agentic/outputs/crewai/`
+- `Cri-CAN/agentic/outputs/autogen/`
 
 Comparison report:
 ```bash
@@ -128,7 +162,7 @@ Generate five diverse overs (wicket, boundary, both, 4s, 6s) and audio via macOS
 ```bash
 python3 Cri-CAN/tools/generate_llm_over_demo.py --match CWC_2011_final_ALL
 ```
-Outputs are written to `Cri-CAN/agentic/demo/llm_audio/run_YYYYMMDD_HHMMSS`.
+Outputs are written to `Cri-CAN/agentic/outputs/demo/llm_audio/run_YYYYMMDD_HHMMSS`.
 
 ## 8) Text first, then audio/video
 Text is the baseline for correctness. Recommended flow:
@@ -144,7 +178,7 @@ You can start audio/video work in parallel, but it should consume validated text
 - QA report: `Cri-CAN/data/structured/csv/qa_report.md`
 - SQLite views: `Cri-CAN/tools/sqlite_views.sql`
 - KG schema: `Cri-CAN/data/structured/kg/schema.md`
-- Long-form output: `Cri-CAN/agentic/longform/outputs`
+- Long-form output: `Cri-CAN/agentic/outputs/longform`
 
 ## Requirements + setup
 - Python 3.11+ (stdlib only).
