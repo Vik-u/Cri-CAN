@@ -1,0 +1,42 @@
+[
+  {
+    "label": "wicket_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 6,
+    "text": "First up, Wicket! Upul Tharanga departs, and Khan has the breakthrough. Then, 1 run(s) there, Sangakkara keeps it moving. After that, Easy 1, keeps the\nscoreboard ticking. Next, Good ball from Khan, Sangakkara can't score. And now, Good ball from Khan, Sangakkara can't score. Finally, No run, tidy from Khan.",
+    "audio_file": "wicket_only_innings1_over6.aiff"
+  },
+  {
+    "label": "boundary_four_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 5,
+    "text": "First up, That's 4! Dilshan finds the rope off Sreesanth. Then, No run, tidy from Sreesanth. After that, That's 4! Dilshan finds the rope off Sreesanth. Next,\nNo run, tidy from Sreesanth. And now, Dot ball - Sreesanth keeps it tight. Finally, Good ball from Sreesanth, Dilshan can't score.",
+    "audio_file": "boundary_four_only_innings1_over5.aiff"
+  },
+  {
+    "label": "boundary_six_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 2,
+    "over": 43,
+    "text": "First up, That's 6! Dhoni finds the rope off Perera. Then, Easy 1, keeps the scoreboard ticking. After that, Easy 1, keeps the scoreboard ticking. Next, Dot\nball - Perera keeps it tight. And now, Dot ball - Perera keeps it tight. Finally, Dot ball - Perera keeps it tight.",
+    "audio_file": "boundary_six_only_innings2_over43.aiff"
+  },
+  {
+    "label": "wicket_and_boundary",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 27,
+    "text": "Sangakkara drives two runs through cover, then launches a super stroke for a four between mid-on and mid-wicket, followed by a single off the leg side. Jayawardene takes a single with soft hands, and then Sangakkara is caught behind on a cutting shot, with Yuvraj having pushed the ball across. Samaraweera tosses the ball up outside off and defends, ending the over with a dot. The over finishes with eight runs and one wicket, and the only boundary is that memorable four. Yuvraj, bowling this over, sees the wicket taken by a sharp catch behind.",
+    "audio_file": "wicket_and_boundary_innings1_over27.aiff"
+  },
+  {
+    "label": "four_and_six",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 49,
+    "text": "First up, 1 run(s) there, Perera keeps it moving. Then, They sneak 1, good rotation of strike. After that, That's 4! Perera finds the rope off Khan. Next,\nCracked away for 4 - Perera times it nicely. And now, Easy 2, keeps the scoreboard ticking. Finally, Cracked away for 6 - Perera times it nicely.",
+    "audio_file": "four_and_six_innings1_over49.aiff"
+  }
+]

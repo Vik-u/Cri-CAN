@@ -175,7 +175,7 @@ OVER_TEMPLATES = {
         ],
         "highlight": [
             "Boundaries from {boundary_batsmen} kept it lively.",
-            "The highlight: {boundary_batsmen} find the rope.",
+            "The highlight: {boundary_batsmen} {find_verb} the rope.",
             "Key moments from {boundary_batsmen} add the spark.",
         ],
         "close": [
@@ -306,6 +306,8 @@ def render_over(style, summary, seed_key):
     wicket_phrase = summary.get("wicket_phrase") or ""
     over_num = summary.get("over_num")
     runs = summary.get("runs")
+    is_plural = " and " in boundary_batsmen or "," in boundary_batsmen
+    find_verb = "find" if is_plural else "finds"
 
     open_line = pick_over_template(style, "open", seed_key).format(
         over_num=over_num,
@@ -317,12 +319,14 @@ def render_over(style, summary, seed_key):
 
     if summary.get("boundary_batsmen_list"):
         highlight = pick_over_template(style, "highlight", seed_key + "|h").format(
-            boundary_batsmen=boundary_batsmen
+            boundary_batsmen=boundary_batsmen,
+            find_verb=find_verb,
         )
         lines.append(highlight)
 
     close_line = pick_over_template(style, "close", seed_key + "|c").format(
-        boundary_batsmen=boundary_batsmen
+        boundary_batsmen=boundary_batsmen,
+        find_verb=find_verb,
     )
     lines.append(close_line)
 

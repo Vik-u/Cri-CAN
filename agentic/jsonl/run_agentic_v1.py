@@ -11,9 +11,9 @@ sys.path.append(str(ROOT_DIR))
 sys.path.append(str(AGENTIC_DIR))
 
 from config import get_path, load_config
-from agents import FactCheckAgent, PlannerAgent, StyleAgent
-from llm_adapter import generate_with_llm
-from style_templates import render_style
+from agentic.agents import FactCheckAgent, PlannerAgent, StyleAgent
+from agentic.llm_adapter import generate_with_llm
+from agentic.style_templates import render_style
 
 def load_overs(path):
     rows = []

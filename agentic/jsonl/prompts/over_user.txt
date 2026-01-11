@@ -1,0 +1,12 @@
+Style: {{style}}
+Over: {{over_num}}
+Runs: {{runs}}
+Wickets: {{wickets}}
+Boundary count: {{boundary_count}}
+Boundary batters: {{boundary_batsmen}}
+Has four: {{has_four}}
+Has six: {{has_six}}
+Extras: {{extras_runs}}
+
+Write a short, human-like over summary.
+Output must include "Over {{over_num}}" and "{{runs}} runs".

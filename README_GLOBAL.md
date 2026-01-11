@@ -1,6 +1,6 @@
 # Cri-CAN End-to-End Guide
 
-This document captures the full flow from raw files to structured data to agentic commentary.
+This document captures the full flow from raw files to structured data, knowledge graph, and agentic commentary.
 
 ## 1) Raw data intake
 - Location: `Cri-CAN/data/raw`
@@ -40,7 +40,16 @@ Views:
 Query helper:
 - `Cri-CAN/tools/query_sqlite.py` (basic CLI query interface)
 
-## 5) Agentic commentary
+## 5) Match knowledge graph (KG)
+Built by `Cri-CAN/tools/build_kg.py`.
+
+Outputs:
+- `Cri-CAN/data/structured/kg/nodes.csv`
+- `Cri-CAN/data/structured/kg/edges.csv`
+- `Cri-CAN/data/structured/kg/ball_state.csv`
+- `Cri-CAN/data/structured/kg/schema.md`
+
+## 6) Agentic commentary
 There are two modes:
 
 ### v0 (deterministic)
@@ -61,6 +70,39 @@ Output is labeled `v0-deterministic` and is derived directly from parsed comment
 - Style controls: broadcast, funny, serious, methodical, energetic, roasting.
 - Modes: deterministic, template, llm.
 - Granularity: per-ball or per-over (smooth summary).
+- Panel style switches voice per ball dynamically.
+- Over output formats: summary, ball, ball+summary.
+
+### Long-form over commentary
+- `Cri-CAN/agentic/longform/run_longform_over.py`
+- Uses KG-derived `ball_state.csv` when present.
+- Output: `Cri-CAN/agentic/longform/outputs/run_YYYYMMDD_HHMMSS/longform_inningsX_overY.md`
+
+## 6b) LLM agent frameworks (CrewAI / AutoGen)
+Two separate folders are provided for framework comparison:
+- `Cri-CAN/agentic/crewai`
+- `Cri-CAN/agentic/autogen`
+
+Install the agents venv:
+```bash
+python3.11 -m venv Cri-CAN/.venv-agents
+Cri-CAN/.venv-agents/bin/python -m pip install crewai==0.11.2 pyautogen==0.2.0
+```
+
+CrewAI run:
+```bash
+Cri-CAN/.venv-agents/bin/python Cri-CAN/agentic/crewai/run_crewai_over.py --innings 2 --over 4 --style broadcast
+```
+
+AutoGen run:
+```bash
+Cri-CAN/.venv-agents/bin/python Cri-CAN/agentic/autogen/run_autogen_over.py --innings 2 --over 4 --style broadcast
+```
+
+Comparison report:
+```bash
+cat Cri-CAN/agentic/agents_compare.md
+```
 
 ### Streamlit UI
 - App: `Cri-CAN/streamlit_app.py`
@@ -73,7 +115,7 @@ Features:
 - Retrieval of recent overs for context
 - LLM hook with fallback style templates
 
-## 6) LLM integration (Ollama)
+## 7) LLM integration (Ollama)
 Configuration is in `Cri-CAN/config.toml`:
 - `llm.command_template = "ollama run {model}"`
 - Text model: `llm.model = "gpt-oss:20b"`
@@ -81,18 +123,12 @@ Configuration is in `Cri-CAN/config.toml`:
 
 The adapter reads a prompt from stdin and expects a single-line response. If LLM output contains preambles, it is cleaned before use.
 
-## 7) Config and Makefile
-- Global config: `Cri-CAN/config.toml`
-- Loader: `Cri-CAN/config.py`
-- Make targets: `Cri-CAN/Makefile`
-
-Example commands:
-- `make -C Cri-CAN build`
-- `make -C Cri-CAN derive`
-- `make -C Cri-CAN sqlite-views`
-- `make -C Cri-CAN agentic-csv`
-- `make -C Cri-CAN agentic-jsonl-v1`
-- `make -C Cri-CAN compare`
+## 7b) LLM over demo + audio
+Generate five diverse overs (wicket, boundary, both, 4s, 6s) and audio via macOS `say`:
+```bash
+python3 Cri-CAN/tools/generate_llm_over_demo.py --match CWC_2011_final_ALL
+```
+Outputs are written to `Cri-CAN/agentic/demo/llm_audio/run_YYYYMMDD_HHMMSS`.
 
 ## 8) Text first, then audio/video
 Text is the baseline for correctness. Recommended flow:
@@ -107,3 +143,21 @@ You can start audio/video work in parallel, but it should consume validated text
 - Deterministic output: `Cri-CAN/agentic/jsonl/sample_output.txt`
 - QA report: `Cri-CAN/data/structured/csv/qa_report.md`
 - SQLite views: `Cri-CAN/tools/sqlite_views.sql`
+- KG schema: `Cri-CAN/data/structured/kg/schema.md`
+- Long-form output: `Cri-CAN/agentic/longform/outputs`
+
+## Requirements + setup
+- Python 3.11+ (stdlib only).
+- Optional: Ollama for local LLM generation.
+- Optional: Streamlit (installed in local venv at `Cri-CAN/.venv`).
+
+Global config: `Cri-CAN/config.toml`
+
+Make targets:
+- `make -C Cri-CAN build`
+- `make -C Cri-CAN derive`
+- `make -C Cri-CAN sqlite-views`
+- `make -C Cri-CAN kg`
+- `make -C Cri-CAN agentic-csv`
+- `make -C Cri-CAN agentic-jsonl-v1`
+- `make -C Cri-CAN compare`

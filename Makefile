@@ -1,7 +1,7 @@
 PY ?= python3
 CONFIG ?= config.toml
 
-.PHONY: build structured legacy derive qa sqlite-views sqlite-query commentary-cli streamlit agentic-csv agentic-sqlite agentic-jsonl agentic-jsonl-v1 agentic-all compare rebuild
+.PHONY: build structured legacy derive qa sqlite-views sqlite-query commentary-cli streamlit agentic-csv agentic-sqlite agentic-jsonl agentic-jsonl-v1 agentic-all compare kg rebuild
 
 build: structured
 
@@ -21,6 +21,9 @@ sqlite-views:
 
 sqlite-query:
 	$(PY) tools/query_sqlite.py --config $(CONFIG) --view ball_summary --limit 5
+
+kg:
+	$(PY) tools/build_kg.py --config $(CONFIG)
 
 commentary-cli:
 	$(PY) agentic/commentary_cli.py --config $(CONFIG) --innings 2 --over 10 --style broadcast
@@ -45,4 +48,4 @@ agentic-all: agentic-csv agentic-sqlite agentic-jsonl
 compare:
 	$(PY) agentic/compare.py --config $(CONFIG)
 
-rebuild: structured derive sqlite-views agentic-all compare
+rebuild: structured derive sqlite-views kg agentic-all compare

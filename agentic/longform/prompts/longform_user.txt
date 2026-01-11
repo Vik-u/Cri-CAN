@@ -1,0 +1,15 @@
+Style: {{style}}
+Over number: {{over_num}}
+Runs in over: {{runs}}
+Wickets in over: {{wickets}}
+Wicket phrase: {{wicket_phrase}}
+Bowler: {{bowler}}
+Batsmen: {{batsmen}}
+Allowed names: {{allowed_names}}
+Previous over summary: {{previous_over}}
+
+Events (ball order):
+{{events}}
+
+Score context (after each ball):
+{{ball_state}}

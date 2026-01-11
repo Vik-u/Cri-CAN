@@ -104,6 +104,8 @@ def normalize_ascii(text):
         "\u2013": "-",
         "\u2011": "-",
         "\u2026": "...",
+        "\u00a0": " ",
+        "\u202f": " ",
     }
     for src, dst in replacements.items():
         text = text.replace(src, dst)

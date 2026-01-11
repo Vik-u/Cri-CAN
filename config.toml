@@ -10,6 +10,7 @@ structured_sqlite_dir = "data/structured/sqlite"
 legacy_csv_dir = "data/structured/legacy_csv"
 structured_report = "data/structured/report.md"
 agentic_report = "agentic/performance_report.md"
+kg_dir = "data/structured/kg"
 
 [files]
 balls_csv = "data/structured/csv/balls.csv"
@@ -20,6 +21,10 @@ sqlite_db = "data/structured/sqlite/commentary.sqlite"
 balls_enriched_csv = "data/structured/csv/balls_enriched.csv"
 qa_report = "data/structured/csv/qa_report.md"
 sqlite_views_sql = "tools/sqlite_views.sql"
+kg_nodes_csv = "data/structured/kg/nodes.csv"
+kg_edges_csv = "data/structured/kg/edges.csv"
+kg_ball_state_csv = "data/structured/kg/ball_state.csv"
+kg_schema = "data/structured/kg/schema.md"
 
 [agentic]
 default_limit = 60

@@ -1,0 +1,16 @@
+Style: {{style}}
+Over: {{over_num}}
+Runs: {{runs}}
+Wickets: {{wickets}}
+Boundary count: {{boundary_count}}
+Has four: {{has_four}}
+Has six: {{has_six}}
+Bowler: {{bowler}}
+Batters: {{batsmen}}
+Previous over summary: {{previous_over}}
+Allowed player names: {{allowed_names}}
+
+Ball events in order:
+{{events}}
+
+Write the full over commentary paragraph as instructed.

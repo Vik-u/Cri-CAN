@@ -7,7 +7,13 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT_DIR))
 
 from config import get_path, load_config
-from commentary_core import generate_deterministic_lines, generate_over_lines, generate_template_lines, load_overs
+from agentic.commentary_core import (
+    generate_deterministic_lines,
+    generate_over_lines,
+    generate_over_sequence,
+    generate_template_lines,
+    load_overs,
+)
 
 
 def main():
@@ -25,12 +31,13 @@ def main():
     parser.add_argument("--boundary", action="store_true", help="Filter boundaries (runs >= 4)")
     parser.add_argument("--wicket", action="store_true", help="Filter wickets")
     parser.add_argument("--event", default=None, help="Event type: dot|run|boundary|extra|wicket")
-    parser.add_argument("--style", default=None, help="Style: broadcast|funny|serious|methodical|energetic|roasting")
+    parser.add_argument("--style", default=None, help="Style: broadcast|funny|serious|methodical|energetic|roasting|panel")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of balls")
     parser.add_argument("--llm", action="store_true", help="Use LLM for generation")
     parser.add_argument("--model", default=None, help="Override LLM model")
     parser.add_argument("--mode", default="template", help="Mode: deterministic|template|llm")
     parser.add_argument("--granularity", default="ball", help="Granularity: ball|over")
+    parser.add_argument("--over-format", default="summary", help="Over format: summary|ball|ball+summary")
     parser.add_argument("--output", default=None, help="Output file (stdout if omitted)")
     args = parser.parse_args()
 
@@ -70,7 +77,24 @@ def main():
     if args.mode == "deterministic":
         lines.extend(generate_deterministic_lines(rows, filters))
     elif args.granularity == "over":
-        lines.extend(generate_over_lines(rows, filters, style))
+        use_llm = args.mode == "llm" or args.llm
+        if args.over_format == "summary":
+            lines.extend(generate_over_lines(rows, filters, style, config=config, use_llm=use_llm, model=args.model))
+        else:
+            include_summary = args.over_format == "ball+summary"
+            lines.extend(
+                generate_over_sequence(
+                    rows,
+                    over_summaries,
+                    config,
+                    filters,
+                    style,
+                    mode=args.mode,
+                    use_llm=use_llm,
+                    model=args.model,
+                    include_summary=include_summary,
+                )
+            )
     else:
         use_llm = args.mode == "llm" or args.llm
         lines.extend(generate_template_lines(rows, over_summaries, config, filters, style, use_llm=use_llm, model=args.model))

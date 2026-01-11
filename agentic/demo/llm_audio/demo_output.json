@@ -1,0 +1,42 @@
+[
+  {
+    "label": "wicket_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 6,
+    "text": "Wicket! Upul Tharanga departs, and Khan has the breakthrough.\n1 run(s) there, Sangakkara keeps it moving.\nEasy 1, keeps the scoreboard ticking.\nGood ball from Khan, Sangakkara can't score.\nGood ball from Khan, Sangakkara can't score.\nNo run, tidy from Khan.\nOver 7, a single wicket fell as the batsman was dismissed, and the bowlers added 2 runs.",
+    "audio_file": "wicket_only_innings1_over6.aiff"
+  },
+  {
+    "label": "boundary_four_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 5,
+    "text": "That's 4! Dilshan finds the rope off Sreesanth.\nNo run, tidy from Sreesanth.\nThat's 4! Dilshan finds the rope off Sreesanth.\nNo run, tidy from Sreesanth.\nDot ball - Sreesanth keeps it tight.\nGood ball from Sreesanth, Dilshan can't score.\nOver 6: a steady 8 runs as Dilshan rockets a solid four, keeping the rhythm.",
+    "audio_file": "boundary_four_only_innings1_over5.aiff"
+  },
+  {
+    "label": "boundary_six_only",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 2,
+    "over": 43,
+    "text": "That's 6! Dhoni finds the rope off Perera.\nEasy 1, keeps the scoreboard ticking.\nEasy 1, keeps the scoreboard ticking.\nDot ball - Perera keeps it tight.\nDot ball - Perera keeps it tight.\nDot ball - Perera keeps it tight.\nOver 44 saw Dhoni smash a six for 8 runs.",
+    "audio_file": "boundary_six_only_innings2_over43.aiff"
+  },
+  {
+    "label": "wicket_and_boundary",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 27,
+    "text": "2 run(s) there, Sangakkara keeps it moving.\nClean hit for 4, Sangakkara cashes in.\n1 run(s) there, Sangakkara keeps it moving.\nThey sneak 1, good rotation of strike.\nBig moment: Yuvraj removes Sangakkara.\nDot ball - Yuvraj keeps it tight.\n8 off over 28, 1 wicket (Sangakkara). Key moments from Sangakkara add the spark. A measured over with steady rotation.",
+    "audio_file": "wicket_and_boundary_innings1_over27.aiff"
+  },
+  {
+    "label": "four_and_six",
+    "match_id": "CWC_2011_final_ALL",
+    "innings": 1,
+    "over": 49,
+    "text": "1 run(s) there, Perera keeps it moving.\nThey sneak 1, good rotation of strike.\nThat's 4! Perera finds the rope off Khan.\nCracked away for 4 - Perera times it nicely.\nEasy 2, keeps the scoreboard ticking.\nCracked away for 6 - Perera times it nicely.\nOver 50 saw Perera unleash a brilliant four and a fiery six, adding 18 runs to the scoreboard.",
+    "audio_file": "four_and_six_innings1_over49.aiff"
+  }
+]
